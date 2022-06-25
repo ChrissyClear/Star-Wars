@@ -181,7 +181,7 @@ button {
 /* footer */
 footer {
     text-align: center;
-}
+  }
 
 i {
     margin-left: 18px;
@@ -238,7 +238,8 @@ i {
     width: 100px;
     height: 100px;
     perspective: 1000px;
-    display: inline-block;
+    /* display: inline-block; */
+    padding-top: 100px;
 }
 
 .flip-card-inner {
