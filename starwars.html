@@ -1,0 +1,2884 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Star Wars Final MFW Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- comment this out for blue box transparent -->
+    <!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.3/themes/hot-sneaks/jquery-ui.css" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/accordion.css">
+    <script src="https://code.jquery.com/jquery-2.1.3.js">
+    </script>
+    <script src="https://code.jquery.com/ui/1.11.2/jquery-ui.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/16ef79e6fd.js" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+
+            // Setting jquery accordion active property to false
+            $("#demoAccordion").accordion({
+                collapsible: true,
+                active: false
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <a name="#top"></a>
+    <main class="container">
+        <!-- add navbar-expand-lg to have buttons show/take away to just leave hamburger menu -->
+        <nav class="navbar navbar-expand-lg navbar-light navbar-dark">
+            <div class="container-fluid">
+                <a href="https://www.youtube.com/watch?v=2ynk0J_n9K4" target="_blank"><img src="img4/starwars logo.jpg"
+                        class="logo"></a>
+                <a class="navbar-brand text-danger fw-bold" href="#">NAVBAR</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- me-auto = left aligned ms-auto = right aligned -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-dark" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Published Projects
+                            </a>
+                            <ul class="dropdown-menu text-success" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="https://chrissyclear.github.io/W4B-Final-Project"
+                                        id="02" target="_blank">SpongeBob</a></li>
+                                <li><a class="dropdown-item" href="https://chrissyclear.github.io/Day6/" id="03"
+                                        target="_blank">Dragons</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item" href="https://chrissyclear.github.io/event-landing-page"
+                                        id="04" target="_blank">Event Landing Page</a>
+                                </li>
+                                <li><a class="dropdown-item" href="https://chrissyclear.github.io/parallax-practice/"
+                                        target="_blank" id="05">Parallax</a></li>
+                                <li><a class="dropdown-item" href="https://chrissyclear.github.io/Carousel-Practice/"
+                                        target="_blank">Carousel</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-dark" aria-current="page" href="starwars.html">Star Wars
+                                Characters</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-dark" aria-current="page" href="bonus.html">Bonus</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-dark" aria-current="page" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-danger" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- <a name="top"></a> -->
+        <a class="list" href="#S01">Darth Vader</a>
+        <a class="list" href="#S02">Anakin Skywalker</a>
+        <a class="list" href="#S03">Emperor Palpatine</a>
+        <a class="list" href="#S04">Qui-Gon Jinn</a>
+        <a class="list" href="#S05">Darth Sidious</a>
+        <a class="list" href="#S06">Yoda</a>
+        <a class="list" href="#S07">Count Dooku/Darth Tyranus</a>
+        <a class="list" href="#S08">Obi-Wan Kenobi</a>
+        <a class="list" href="#S09">Darth Maul/Maul</a>
+        <a class="list" href="#S10">Luke Skywalker</a>
+        <a class="list" href="#S11">Storm Trooper</a>
+        <a class="list" href="#S12">Princess Leia</a>
+        <a class="list" href="#S13">Jabba The Hutt</a>
+        <a class="list" href="#S14">Padmé Amidala</a>
+        <a class="list" href="#S15">Jango Fett</a>
+        <a class="list" href="#S16">Han Solo</a>
+        <a class="list" href="#S17">General Grievous</a>
+        <a class="list" href="#S18">Chewbacca (Wookie)</a>
+        <a class="list" href="#S19">Bib Fortuna</a>
+        <a class="list" href="#S20">C-3PO</a>
+        <a class="list" href="#S21">Kylo Ren/Ben Solo</a>
+        <a class="list" href="#S22">R2-D2</a>
+        <a class="list" href="#S23">Boba Fett</a>
+        <a class="list" href="#S24">Wicket Wystri Warrick</a>
+        <a class="list" href="#S25">Lando Calrissian</a>
+        <a class="list" href="#S26"></a>
+        <a class="list" href="#S27"></a>
+        <a class="list" href="#S28"></a>
+        <a class="list" href="#S29"></a>
+        <a class="list" href="#S30"></a>
+        <a class="list" href="#S31"></a>
+        <a class="list" href="#S32"></a>
+
+        <!-- 1st h2 under character name add id="S01" change number sequence -->
+        <!-- remove h5 under the h1 for the click me -->
+        <!-- ADD <a href="#top">Back To Top</a> after the last </p> but before the last </div> -->
+        <div class="parallax">
+
+            <main class="container-fluid" style="width: 800px;">
+                <div id="demoAccordion">
+                    <!-- DARTH VADER (1)darthvader-->
+                    <h2 id="S01">
+                        <a href="#">
+                            <h1><b class="starwars text-danger">Darth Vader <br>
+                                </b></h1>
+                        </a>
+                    </h2>
+                    <div>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/Darth_Vader" target="_blank"><button
+                                    class="btn btn-outline-danger text-light">For
+                                    More Wikipedia Information (click here)</button></a>
+                        </p>
+                        <p class="text-danger">
+                            Darth Vader
+                            <a href="https://www.youtube.com/watch?v=qd83xlvjg0Y" target="_blank"><img
+                                    src="img3/Darth Vader.jpg" alt="" height="100px;" width="200px;"></a>
+                        </p>
+                        <p class="text-light">
+                            Created by George Lucas <br>
+                            First appearance Star Wars (1977) <br><br>
+                        </p>
+                        <P class="text-info">
+                            Darth Vader is a fictional character in the Star Wars franchise. The character is the
+                            primary
+                            antagonist in the original trilogy and, as Anakin Skywalker, is one of the primary
+                            protagonists
+                            throughout the prequel trilogy. Star Wars creator George Lucas has collectively referred to
+                            the
+                            first
+                            six episodic films of the franchise as "the tragedy of Darth Vader". He has become one of
+                            the
+                            most
+                            iconic villains in popular culture, and has been listed among the greatest villains and
+                            fictional
+                            characters ever. <br><br>
+                            Originally a slave on Tatooine, Anakin Skywalker is a Jedi prophesied to bring balance to
+                            the
+                            Force.
+                            He is lured to the dark side of the Force by Chancellor Sheev Palpatine / Darth Sidious and
+                            becomes
+                            a
+                            Sith Lord, assuming the title of Darth Vader. After a lightsaber battle with his former
+                            mentor
+                            Obi-Wan
+                            Kenobi on Mustafar, in which he is severely injured, Vader is transformed into a cyborg. He
+                            then
+                            serves the Galactic Empire for over two decades as its chief enforcer. Vader ultimately
+                            redeems
+                            himself by saving his son, Luke Skywalker, and killing Palpatine, sacrificing his own life
+                            in
+                            the
+                            process.[5] He is also the secret husband of Padmé Amidala, the biological father of
+                            Princess
+                            Leia,
+                            and the grandfather of Kylo Ren (Ben Solo). In the non-canonical Star Wars Legends
+                            continuity,
+                            he is
+                            also the grandfather of Ben Skywalker, his eponym Anakin Solo, Jaina Solo and Darth Caedus
+                            (Jacen
+                            Solo), and the great-grandfather of Allana Solo. <br><br>
+                        </P>
+                        <p class="text-light"> In-universe information: <br>
+                            Full name-Anakin Skywalker <br>
+                            Alias-The Chosen One <br><br>
+                        </p>
+                        <p class="text-info"> Occupation: <br>
+                            Slave <br>
+                            Padawan <br>
+                            Jedi Knight <br>
+                            Member of the Jedi High Council <br>
+                            Jedi General in the Grand Army of the Republic <br>
+                            Dark Lord of the Sith <br>
+                            Supreme Commander of the Imperial Military <br><br>
+                        </p>
+                        <p class="text-light"> Affiliation: <br>
+                            Watto's shop <br>
+                            Jedi Order <br>
+                            Galactic Republic <br>
+                            Sith Order <br>
+                            Galactic Empire <br><br>
+                        </p>
+                        <p class="text-info">
+                            Spouse: Padmé Amidala <br>
+                            Master: Obi-Wan Kenobi (as Jedi)---Darth Sidious (as Sith) <br>
+                            Apprentice: Ahsoka Tano <br>
+                            Homeworld: Tatooine <br><br>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/CH9fCN0gSiY" target="_blank"><button
+                                    class="btn btn-outline-danger text-light">Best Darth Vader Moments (click
+                                    here)</button></a>
+                        </p> <br><br>
+                        <p>
+                            <a href="https://youtu.be/0_iUPKyoTMk" target="_blank"><button
+                                    class="btn btn-outline-danger text-light">Best Darth Vader Quotes (click
+                                    here)</button></a>
+                        </p> <a href="#top">Back To Top</a>
+                    </div>
+                    <!-- DARTH VADER (1) darthvader-->
+
+                    <!-- ANAKIN SKYWALKER (2) anakin-->
+                    <h2 id="S02">
+                        <a href="#">
+                            <h1><b class="starwars text-primary">Anakin Skywalker <br>
+                                </b></h1>
+                        </a>
+                    </h2>
+                    <div>
+                        <p>
+                            <a href="https://starwars.fandom.com/wiki/Anakin_Skywalker" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">For More Wookiepedia Information Click
+                                    Here</button></a>
+                        </p>
+                        <p class="text-primary">
+                            Anakin Skywalker
+                            <a href="https://www.youtube.com/watch?v=pJvm5VXzJpg" target="_blank"><img
+                                    src="img3/anakin skywalker 2.jpg" alt="" height="100px;" width="200px;"></a>
+                        </p>
+                        <p class="text-light">
+                            APPEARANCES: <br>
+                            Star Wars: Return of the Jedi <br>
+                            Star Wars: The Phantom Menace <br>
+                            Star Wars: Attack of the Clones <br>
+                            Star Wars: Revenge of the Sith <br>
+                            Star Wars Rebels <br>
+                            Star Wars: The Clone Wars <br><br>
+                        </p>
+                        <P class="text-info">
+                            Anakin Skywalker was a legendary Force-sensitive human male who was a Jedi Knight of the
+                            Galactic
+                            Republic and the prophesied Chosen One of the Jedi Order, destined to bring balance to the
+                            Force.
+                            Also known as "Ani" during his childhood, Skywalker earned the moniker "Hero With No Fear"
+                            from
+                            his
+                            accomplishments in the Clone Wars. His alter ego, Darth Vader, the Dark Lord of the Sith,
+                            was
+                            created when Skywalker turned to the dark side of the Force, pledging his allegiance to the
+                            Sith
+                            Lord Darth Sidious at the end of the Republic Era. <br><br>
+                            Anakin Skywalker was one of the most powerful Jedi and Sith in galactic history. The Force
+                            was
+                            especially strong in the Skywalker bloodline, which culminated in Anakin's grandson, Ben
+                            Solo,
+                            Organa's son who was born by the end of the Galactic Civil War in 5 ABY. Solo would turn to
+                            the
+                            dark
+                            side as well, becoming the dark warrior Kylo Ren during the rise of the First Order. Like
+                            his
+                            grandfather, however, Solo found redemption by sacrificing his life for the love of
+                            another—the
+                            Jedi
+                            apprentice Rey, who heard Skywalker's voice telling her to restore the balance, as he once
+                            had,
+                            during the Battle of Exegol in 35 ABY. Solo's death ended the Skywalker bloodline, although
+                            Rey,
+                            the
+                            granddaughter of Sidious, rejected her true heritage and took their surname to honor their
+                            legacy.
+                            <br><br>
+                        </P>
+                        <p class="text-light"> Anakin Skywalker/Darth Vader: Biographical information: <br><br>
+                            Born: 41 BBY, Tatooine <br>
+                            Died: 4 ABY, DS-2 Death Star II Mobile Battle Station, Endor system <br><br>
+                            Physical description: <br><br>
+                            Species: Human <br>
+                            Gender: Male <br>
+                            Height: 1.88 meters, later 2.03 meters (6 ft, 8 in) in armor <br>
+                            Mass: 120 kilograms in armor <br>
+                            Hair color: Blond,light and dark <br>
+                            Eye color: Blue, later yellow (dark side) <br>
+                            Skin color: Light, later pale <br>
+                            Cybernetics: Cybernetic right arm; later prosthetic arms and legs, and a life-support system
+                            <br><br>
+
+                        </p>
+                        <p class="text-info">
+                            "Do you believe you are the Chosen One?"
+                            "How can I know?"
+                            "I can tell you what I believe. I believe you will bring balance to the Force. That you will
+                            face
+                            your demons and save the universe."
+                            ―Qui-Gon Jinn and Anakin Skywalker <br><br>
+
+                        </p>
+                        <p class="text-light"> Chronological and political information: Affiliation(s): <br><br>
+                            Skywalker family <br>
+                            Jedi Order <br>
+                            Jedi High Council <br>
+                            Galactic Republic <br>
+                            7th Sky Corps <br>
+                            302nd Battalion <br>
+                            501st Legion <br>
+                            Office of the Chancellor <br>
+                            Sith <br>
+                            Galactic Empire <br>
+                            Imperial High Command <br>
+                            Death Squadron <br>
+                            Vader's crew <br><br>
+                        </p>
+                        <p class="text-info">
+                            Masters: <br><br>
+                            Qui-Gon Jinn (informal Jedi Master) <br>
+                            Obi-Wan Kenobi (Jedi Master) <br>
+                            Darth Sidious (Sith Master) <br>
+                            Yoda (Force spirit teacher) <br><br>
+
+                            Apprentices: <br><br>
+                            Ahsoka Tano (Padawan) <br>
+                            Inquisitorius (dark-side apprentices) <br>
+                            "Corvax descendant" <br><br>
+                            Signifcant Other: Padmé Amidala <br>
+                            Homeworld-Tatooine <br><br>
+                        </p>
+                        <p>
+                            <a href="https://www.bing.com/videos/search?q=anakin+skywalker+the+pod+race+video&&view=detail&mid=08EFCF23841DA47BA7AF08EFCF23841DA47BA7AF&rvsmid=1A9A02F5A79AEA97CB051A9A02F5A79AEA97CB05&FORM=VDQVAP"
+                                target="_blank"><button class="btn btn-outline-primary text-light">Child Anakin
+                                    Skywalker</button></a>
+                        </p> <br>
+                        <p>
+                            <a href="https://youtu.be/HLlf5bC1wxg" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">Young
+                                    Adult
+                                    Anakin Skywalker before Darth Vader
+                                </button></a>
+                        </p> <a href="#top">Back To Top</a>
+
+                    </div>
+                    <!-- ANAKIN SKYWALKER (2) anakin -->
+
+                    <!-- EMPEROR SHEEV PALPATINE (3) palpatine-->
+                    <h2 id="S03">
+                        <a href="#">
+                            <h1><b class="starwars text-danger">Emperor Sheev Palpatine <br>
+                                </b></h1>
+                        </a>
+                    </h2>
+                    <div>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/Palpatine" target="_blank"><button
+                                    class="btn btn-outline-danger text-light">For
+                                    More Wikipedia Information Click Here</button></a>
+                        </p>
+                        <p class="text-danger">
+                            Emperor Sheev Palpatine
+                            <a href="https://youtu.be/B-w1SbkpzV8" target="_blank"><img src="img3/Palpatine 2.webp"
+                                    alt="" height="100px;" width="200px;"></a>
+                        </p>
+                        <p class="text-light">
+                            Created by George Lucas <br>
+                            First appearance: The Empire Strikes Back (1980) <br><br>
+                        </p>
+                        <P class="text-info">
+                            The one story the prequels tell particularly well doesn't really involve the corruption of
+                            Anakin
+                            Skywalker; rather, it's the one about how the shadowy leader of a religious cult dismantled
+                            the
+                            republic from within. <br><br>
+
+                            Senator Sheev Palpatine, a.k.a. “Darth Sidious,” only registers in the original trilogy as
+                            “Darth
+                            Vader's boss,” but in Phantom through Sith he's the evil no one recognizes until it's too
+                            late.
+                            He
+                            starts out as a deceptively conscientious politician, who then provokes a war, convinces his
+                            colleagues to build him a clone army, gets himself named Supreme Chancellor as an emergency
+                            measure, and forges an Empire — all legally. <br><br>
+
+                            In one of the most loaded images of the whole series, Palpatine flings congressional
+                            box-seats
+                            at
+                            Yoda, showing how he uses democracy as a weapon while simultaneously destroying it. <br><br>
+
+                            Sheev Palpatine is a fictional character in the Star Wars franchise, created by George
+                            Lucas.
+                            Initially credited as the Emperor in the 1980 film The Empire Strikes Back, he is also known
+                            by
+                            his Sith name, Darth Sidious. <br><br>
+
+                            The character appears in each trilogy in the nine-film Skywalker saga, in which he is
+                            portrayed
+                            by
+                            Ian McDiarmid and serves as the primary antagonist. <br><br>
+
+                            In the original trilogy, Palpatine is depicted as Emperor of the Galactic Empire and the
+                            master
+                            of
+                            Darth Vader. In the prequel trilogy, he is portrayed as a charismatic politician—and,
+                            secretly,
+                            a
+                            Sith Lord —who orchestrates the Clone Wars, all but exterminates the Jedi Order, ends the
+                            Galactic
+                            Republic, and seduces Jedi Knight Anakin Skywalker to the dark side of the Force. <br><br>
+
+                            In The Rise of Skywalker (2019), the final film in the sequel trilogy, Palpatine is revealed
+                            to
+                            be
+                            the mastermind behind the First Order and the creator of its former leader, Snoke, as well
+                            as
+                            the
+                            grandfather of protagonist Rey. <br><br>
+
+                            Since the release of Return of the Jedi in 1983, Palpatine has become a widely recognized
+                            symbol
+                            of evil in popular culture, and since the prequel films, also one of sinister deception and
+                            the
+                            subversion of democracy. Aside from the films, Palpatine appears in various canon and
+                            non-canon
+                            Star Wars media. <br><br>
+                        </P>
+                        <p class="text-light"> Full name: Sheev Palpatine <br>
+                            Alias: Darth Sidious <br>
+                            Species: Human <br>
+                            Gender: Male <br><br>
+                            Occupation:
+                            Dark Lord of the Sith <br>
+                            Senator from Naboo <br>
+                            Supreme Chancellor of the Galactic Republic <br>
+                            Emperor of the Galactic Empire <br>
+                            Mastermind of the First Order <br>
+                            Leader of the Sith Eternal <br><br>
+                        </p>
+                        <p class="text-info"> Apprentice: <br>
+                            Darth Maul <br>
+                            Count Dooku <br>
+                            Darth Vader <br>
+                            Kylo Ren (proxy) <br><br>
+                        </p>
+                        <p class="text-light"> Affiliation: <br>
+                            Sith Order <br>
+                            Galactic Republic <br>
+                            Confederacy of Independent Systems <br>
+                            Galactic Empire <br>
+                            First Order <br>
+                            Sith Eternal <br><br>
+                        </p>
+                        <p class="text-info">
+                            Religion: Sith Order <br>
+                            Master: Darth Plaguies <br>
+                            Creation: Snoke <br>
+                            Homeworld: Naboo <br><br>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/OF8yL4P0YDY" target="_blank"><button
+                                    class="btn btn-outline-danger text-light">The
+                                    Best
+                                    of
+                                    Emperor Sheev Palpatine</button></a>
+                        </p> <br>
+                        <p>
+                            <a href="https://youtu.be/YBVfiThFL3g" target="_blank"><button
+                                    class="btn btn-outline-danger text-light">The
+                                    Best
+                                    Quotes of Emperor Sheev Palpatine</button></a>
+                        </p> <a href="#top">Back To Top</a>
+                    </div>
+                    <!-- EMPEROR SHEEV PALPATINE (3) palpatine-->
+
+                    <!-- QUI-GON JINN (4) qui-gon -->
+                    <h2 id="S04">
+                        <a href="#">
+                            <h1><b class="starwars text-primary">Qui-Gon Jinn <br>
+                                </b></h1>
+                        </a>
+                    </h2>
+                    <div>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/Qui-Gon_Jinn" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">For
+                                    More Wikipedia Information Click Here</button></a>
+                        </p>
+                        <p class="text-primary">
+                            Qui-Gon Jinn
+                            <a href="https://youtu.be/ojXpHwhIqO8" target="_blank"><img src="img3/Qui-Gon Jinn.jpg"
+                                    alt="" height="100px;" width="200px;"></a>
+                        </p>
+                        <p class="text-light">
+                            Created by George Lucas <br>
+                            First Appearance: The Phantom Menace (1999) <br><br>
+                        </p>
+                        <P class="text-info">
+                            All the scorn heaped on The Phantom Menace obscures how good Liam Neeson is as an honorable
+                            Jedi
+                            knight who mentors young Obi-Wan (Ewan McGregor) in the ways of the Force. <br><br>
+
+                            In Qui-Gon Jinn, we can see the wise-elder warrior that Kenobi would grow to become, and
+                            Neeson
+                            (who had yet to make the transition to avenging-angel action star) brought just the right
+                            amount
+                            of Zen gravitas to his ass-kicking role. <br><br>
+
+                            Although the prequels were about Anakin's character
+                            arc, the first installment really belongs to this character, who's trying to maintain a
+                            fragile
+                            peace across the galaxy while unseen forces are conspiring to tear it apart. <br><br>
+
+                            That's what makes his death at the hands of Darth Maul especially tragic: It's not just
+                            Qui-Gon
+                            who's dying but also his era's sense of nobility. <br><br>
+
+                            Qui-Gon Jinn (/'kwaigɒn/) is a fictional character in the Star Wars franchise, played by
+                            Liam
+                            Neeson. <br><br>
+
+                            He is a main character in the prequel film trilogy, serving as the protagonist of The
+                            Phantom
+                            Menace (1999). <br><br>
+
+                            Within the fictional Star Wars universe, Qui-Gon mentors Obi-Wan Kenobi, and is a powerful
+                            and
+                            wise, yet controversial Jedi Master, who has many uncommon beliefs regarding The Force.
+                            <br><br>
+
+
+                        </P>
+                        <p class="text-light"> In-universe Information: <br>
+                            Species: Human <br>
+                            Gender: Male <br>
+
+
+                        </p>
+                        <p class="text-info"> Occupation: Jedi
+                        </p>
+                        <p class="text-light"> Affiliation: <br>
+                            Jedi Order <br>
+                            Galactic Republic <br><br>
+                        </p>
+                        <p class="text-info">
+                            Master: Count Dooku <br>
+                            Apprentices: Obi-Wan Kenobi <br>
+                            Legends: Feemor, Xanatos <br>
+                            Homeworld: Coruscant <br><br>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/F5ueWSOCppU" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">Qui-Gon
+                                    Jinn Best Quotes</button></a>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/0JNFOUYZcwg" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">Qui-Gon
+                                    Jinn Best Moments</button></a>
+                        </p>
+                        <p>
+                            <a href="https://www.youtube.com/watch?v=sagpKN9j4tQ" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">Qui-Gon
+                                    Jinn Fight Scenes</button></a>
+                        </p> <a href="#top">Back To Top</a>
+                    </div>
+                    <!-- QUI-GON JINN (4) qui-gon -->
+
+                    <!-- DARTH SIDIOUS (5) sid -->
+                    <h2 id="S05">
+                        <a href="#">
+                            <h1><b class="starwars text-danger">Darth Sidious <br>
+                                </b></h1>
+                        </a>
+                    </h2>
+                    <div>
+                        <p>
+                            <a href="https://starwars.fandom.com/wiki/Darth_Sidious" target="_blank"><button
+                                    class="btn btn-outline-danger text-light">For More Fandom Information Click
+                                    Here</button></a>
+                        </p>
+                        <p class="text-danger">
+                            Darth Sidious
+                            <a href="https://youtu.be/qCbYHZ5DrCY" target="_blank"><img src="img3/Darth Sidious 2.jpg"
+                                    alt="" height="100px;" width="200px;"></a>
+                        </p>
+                        <p class="text-light">
+                            Created by George Lucas <br>
+                            First Appearance: Star Wars: Episode II Attack of the Clones <br><br>
+                        </p>
+                        <P class="text-info">
+                            Darth Sidious, born Sheev Palpatine and also known simply as the Emperor, was a human male
+                            Dark Lord of the Sith and Emperor of the Galactic Empire, ruling from 19 BBY to 4 ABY.
+                            <br><br>
+
+                            Rising to power in the Galactic Senate as the senator of Naboo, the secretive Sith Lord
+                            cultivated two identities, Sidious and Palpatine, using both to further his political career
+                            and deceive his way into accomplishing his goal. <br><br>
+
+                            He orchestrated the fall of the Galactic Republic and the Jedi Order through the Clone Wars,
+                            and then established his reign over the galaxy which lasted until his death at the Battle of
+                            Endor. However, the dark side of the Force gave rise to powers which allowed the Emperor to
+                            return from the grave. <br><br>
+
+
+
+                            <p class="text-light"> Darth Sidious/Sheev Palpatine, Biographical Information: <br>
+                                Born: 84 (BBY) Before Battle of Yavin, Naboo <br>
+                                Died: 4 (ABY) After Battle of Yavin, Death Star II, Endor system (original body) <br>
+                                Died: 35 (ABY) After Battle of Yavin, Exegol (clone body) <br><br>
+                                Physical description: <br>
+                                Species: Human (Naboo) <br>
+                                Gender: Male <br>
+                                Height: 1.73/1.78 meters <br>
+                                Mass: 75 kilograms <br>
+                                Hair color: Red and later white <br>
+                                Eye color: Blue (human), then yellow (dark side), last white (deteriorated clone body)
+                                <br>
+                                Skin color: Light, but later pale <br>
+                                Cybernetics: Ommin harness <br><br>
+
+                            </p>
+                            <p class="text-info"> Occupations: <br>
+                                Dark Lord of the Sith <br>
+                                Senator from Naboo <br>
+                                Supreme Chancellor of the Galactic Republic <br>
+                                Emperor of the Galactic Empire <br>
+                                Mastermind of the First Order <br>
+                                Leader of the Sith Eternal <br><br>
+                            </p>
+                            <p class="text-light"> Chronological and political information Affiliation(s): <br>
+                                Palpatine family <br>
+                                Sith <br>
+                                Royal House of Naboo <br>
+                                Galactic Republic <br>
+                                Naboo delegation <br>
+                                Office of the Chancellor <br>
+                                Trade Federation <br>
+                                Confederacy of Independent Systems <br>
+                                Galactic Empire <br>
+                                Sith Eternal <br>
+                                First Order <br><br>
+                            </p>
+                            <p class="text-info">
+                                Religion: Sith Order <br>
+                                Master: Darth Plagueis <br><br>
+                                Apprentices: <br>
+                                Wilhuff Tarkin (Protégé)
+                                Count Dooku <br>
+                                Darth Maul (Sith)
+                                Darth Tyranus (Sith)
+                                Gallius Rax (Protégé)
+                                Darth Vader (Sith)
+                                Inquisitorius (Jedi hunters)
+                                Kylo Ren (proxy-secretly) <br><br>
+
+                                Creation: Snoke (puppet) <br>
+                                Homeworld: Naboo <br><br>
+                            </p>
+
+                            <p class="text-light">
+                                Darth Sidious's Collection Production Information: <br><br>
+
+                                Type: Private Sith artifact and archives collection <br>
+                                Culture: Sith <br>
+                                Owners: Darth Sidious <br>
+                                Locations: Galactic City, Coruscant <br>
+                                A dilapidated tower, The Works <br>
+                                Chancellor's Suite, Senate Office Building, Federal District <br>
+                                Sith retreat, Grand Republic Medical Facility <br>
+                                Imperial Palace, Palace Precinct, Physical and technical specifications <br><br>
+
+                                Material(s): <br>
+                                Great Crystal of Aantonaii <br>
+                                A massive Sith holocron from Moraband <br>
+                                Sith Holocron repository <br>
+                                Numerous Sith weapons <br>
+                                Sith Chalice <br>
+                                2 spirit urns <br>
+                                Bronzium statues of the Four Sages of Dwartii <br>
+                                Usage and history
+                                <br><br>
+                            </P>
+                            <a href="https://youtu.be/Q_7KaMDHoGs" target="_blank"><button
+                                    class="btn btn-outline-danger text-light">Becoming
+                                    Darth Sidious Completely</button></a>
+                        </p> <br>
+                        <p>
+                            <a href="https://youtu.be/h13rw7iqS9U" target="_blank"><button
+                                    class="btn btn-outline-danger text-light">Darth
+                                    Sidious' Power Explained</button></a>
+                        </p> <a href="#top">Back To Top</a>
+                    </div>
+                    <!-- DARTH SIDIOUS (5) sid -->
+
+                    <!--YODA (6) yoda -->
+                    <h2 id="S06">
+                        <a href="#">
+                            <h1><b class="starwars text-primary">Yoda <br>
+                                </b></h1>
+                        </a>
+                    </h2>
+                    <div>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/Yoda" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">For More
+                                    Wikipedia Information Click Here</button></a>
+                        </p>
+                        <p class="text-primary">
+                            Yoda
+                            <a href="https://youtu.be/Gv7J8rvIHok" target="_blank"><img src="img3/Yoda.jpg" alt=""
+                                    height="100px;" width="200px;"></a>
+                        </p>
+                        <p class="text-light">
+                            Created by George Lucas <br>
+                            First appearance The Empire Strikes Back (1980) <br><br>
+                        </p>
+                        <P class="text-info">
+                            Like a lot of good mentors, Yoda doesn't make things easy on his pupils, expecting them to
+                            figure out
+                            things on their own rather than spoon-feeding them important life lessons. (How else to
+                            explain a
+                            character who refuses to speak in the traditional subject-verb order?) <br><br>
+
+                            Character overview: <br>
+                            Grand Master Yoda is among the oldest, most stoic, and most powerful Jedi Masters in the
+                            Star Wars
+                            universe. <br><br>
+
+                            George Lucas opted to have many details of the character's life history remain unknown.
+                            Yoda's
+                            race and home world have not been named in any official media, canonical or otherwise, and
+                            he is merely
+                            said to be of a "species unknown" by the Star Wars Databank. <br><br>
+                            Yoda's characteristic speech patterns were conceived by Lucas and Lawrence Kasdan, and
+                            developed by Oz. Academic syntacticians have found them somewhat inconsistent, but have
+                            extrapolated that they possess object-subject-verb word order, making them anastrophic.
+                            <br><br>
+
+                            The films and Expanded Universe reveal that Yoda had a hand in training almost every Jedi
+                            Master in the
+                            galaxy. In the Star Wars prequel films, he instructs several younglings in the Jedi Temple
+                            before they
+                            are assigned to a master. In The Empire Strikes Back he mentions that he had been training
+                            Jedi "for 800
+                            years", which means he must have been a Master Jedi for quite some time before that.
+                            <br><br>
+                        </P>
+                        <p class="text-light">In-universe information: <br>
+                            Full name: Yoda <br>
+                            Species: Unknown <br>
+                            Gender: Male <br>
+                            Titles: <br>
+                            Jedi Master (Episodes I-VI) <br>
+                            Grand Master of the Jedi High Council (Episodes I-III) <br>
+                            General in the Grand Army of the Republic (Episodes II-III) <br><br>
+                        </p>
+                        <p class="text-info"> Occupation: <br>
+                            Jedi Master <br><br>
+                        </p>
+                        <p class="text-light"> Affiliation: <br>
+                            Jedi Order <br>
+                            Galactic Republic <br><br>
+                        </p>
+                        <p class="text-info"> Apprentices: <br>
+                            Count Dooku <br>
+                            Mace Windu <br>
+                            Obi-Wan Kenobi <br>
+                            Luke Skywalker <br>
+                            Numerous others <br>
+                            Lives in exile on the swamp planet of Dagobah. <br><br>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/QOa5i0zT254" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">The
+                                    Best of
+                                    Yoda</button></a>
+                        </p> <br>
+                        <p>
+                            <a href="https://youtu.be/Zl7B3Jc6Fnw" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">The
+                                    Best Life
+                                    Quotes from Yoda</button></a>
+                        </p> <a href="#Top">Back To Top</a>
+                    </div>
+                    <!-- YODA (6) yoda-->
+
+                    <!-- COUNT DOOKU (7) dooku -->
+                    <h2 id="S07">
+                        <a href="#">
+                            <h1><b class="starwars text-danger">Count Dooku/Darth Tyranus <br>
+                                </b></h1>
+                        </a>
+                    </h2>
+                    <div>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/Count_Dooku" target="_blank"><button
+                                    class="btn btn-outline-danger text-light">For More Wikipedia Information Click
+                                    Here</button></a>
+                        </p>
+                        <p class="text-danger">
+                            Count Dooku
+                            <a href="https://youtu.be/rlRJLcy8NsA" target="_blank"><img src="img3/Count Dooku.webp"
+                                    alt="" height="100px;" width="200px;"></a>
+                        </p>
+                        <p class="text-light">
+                            Created by George Lucas <br>
+                            First appearance: Attack of the Clones (2002)
+                            <br><br>
+                        </p>
+                        <P class="text-info"> Count Dooku/Darth Tyranus: <br>
+                            Forgive Count Dooku's dismal name; even his Sith alias, Darth Tyranus, inspires shrugs more
+                            than fear. <br>
+                            But embrace Christopher Lee, who brings this master swordsman of the one-percent to life
+                            with the technicolor gravitas of Hammer horror. Dooku's best machinations as a Separatist
+                            leader take place off screen; Lee's Middle-Earth training means his lightsaber skills,
+                            however, are devastating. <br>
+                            The Count's final battle with Anakin and Obi-Wan is among the best action sequences of the
+                            Prequels, and his death — a vicious execution at the hands of greasy-haired Anakin — is a
+                            key moment in the young Jedi's fall to the dark side. <br><br>
+                        </P>
+                        <p class="text-light"> Family: <br>
+                            Count Gora (father)
+                            Countess Anya (mother)
+                            Count Ramil (brother)
+                            Jenza (sister)
+
+                        </p>
+                        <p class="text-info"> Occupation: <br>
+                            Jedi Master (formerly) <br>
+                            Dark Lord of the Sith <br>
+                            Head of State of the Confederacy of Independent Systems <br><br>
+
+                        </p>
+                        <p class="text-light"> Affiliation: <br>
+                            Jedi Order (formerly) <br>
+                            Galactic Republic (formerly) <br>
+                            Sith Order <br>
+                            Confederacy of Independent Systems <br>
+                            House of Serenno <br><br>
+                        </p>
+                        <p class="text-info">
+                            Alias: Darth Tyranus
+                            Species: Human
+                            Gender: Male
+                            Title: Count of Serenno
+                            Significant other: Elodore Vane (Legends) <br><br>
+                            Masters: <br>
+                            Yoda (Jedi Master) <br>
+                            Darth Sidious (Sith Master) <br><br>
+
+                            Apprentices: <br><br>
+
+                            Jedi Apprentices <br>
+                            Rael Averross <br>
+                            Qui-Gon Jinn <br>
+                            Komari Vosa (Legends) <br><br>
+
+                            Sith Apprentices <br>
+                            Asajj Ventress <br>
+                            General Grievous (lightsaber combat trainee) <br>
+                            Savage Opress <br>
+                            Quinlan Vos (briefly) <br><br>
+
+                            Homeworld:Serenno <br><br>
+                        </p>
+                        <p>
+                            <a href="https://www.youtube.com/watch?v=5nT5LhldIE4" target="_blank"><button
+                                    class="btn btn-outline-danger text-light">Count Dooku/Darth Tyranus
+                                    Explained</button></a>
+                        </p> <br>
+                        <p>
+                            <a href="https://youtu.be/VD46xnJne2I" target="_blank"><button
+                                    class="btn btn-outline-danger text-light">Darth Tyranus Explained</button></a>
+                        </p> <a href="#Top">Back To Top</a>
+                    </div>
+                    <!-- COUNT DOOKU (7) dooku-->
+
+
+                    <!-- OBI-WAN KENOBI (8)obi-wan -->
+                    <h2 id="S08">
+                        <a href="#">
+                            <h1><b class="starwars text-primary">Obi-Wan Kenobi <br>
+                                </b></h1>
+                        </a>
+                    </h2>
+                    <div>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/Obi-Wan_Kenobi" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">For More Wikipedia Information Click
+                                    Here</button></a>
+                        </p>
+                        <p class="text-primary">
+                            Obi-Wan Kenobi
+                            <a href="https://www.starwars.com/video/a-series-of-firsts-obi-wan-kenobi"
+                                target="_blank"><img src="img3/Obi-Wan Kenobi.jpg" alt="" height="100px;"
+                                    width="200px;"></a>
+                        </p>
+                        <p class="text-light">
+                            Created by George Lucas <br>
+                            First appearance Star Wars (1977) <br><br>
+                        </p>
+                        <P class="text-info">
+                            Obi-Wan Kenobi (/'oʊbi:ˌwa:n kə'noʊbi:/) is a fictional character in the Star Wars
+                            franchise.
+                            Within
+                            the original trilogy, Obi-Wan is a Jedi Master as a supporting character and is
+                            portrayed
+                            by
+                            British
+                            actor Alec Guinness. <br><br>
+                            In the later-released prequel trilogy, a younger version of the character serves as one
+                            of
+                            the
+                            two
+                            main protagonists, alongside Anakin Skywalker, and is portrayed by Scottish actor Ewan
+                            McGregor.
+                            In
+                            the original trilogy he is introduced as Ben Kenobi, an alias he uses whilst in hiding
+                            from the
+                            Empire. <br><br>
+                            He is a mentor to Luke Skywalker, to whom he introduces the ways of the Jedi. After
+                            sacrificing
+                            himself in a duel against Darth Vader, Obi-Wan guides Luke through the Force in his
+                            fight
+                            against
+                            the Galactic Empire. <br><br>
+                            In the prequel trilogy, set two decades earlier, he is initially a Padawan (apprentice)
+                            to
+                            Jedi
+                            Master Qui-Gon Jinn, and later mentor and friend of Luke's father Anakin, who falls to
+                            the
+                            dark
+                            side
+                            of the Force and becomes Vader. The character briefly appears in the sequel trilogy as a
+                            disembodied
+                            voice, speaking to protagonist Rey. He is frequently featured as a main character in
+                            various
+                            other
+                            Star Wars media, including the television miniseries Obi-Wan Kenobi, in which McGregor
+                            reprises
+                            the
+                            role.
+                        </P>
+                        <p class="text-light"> Alias: <br>
+                            Ben Kenobi,
+                            Old Ben <br>
+                            Species: Human <br>
+                            Gender: Male <br>
+                            Title: <br>
+                            Padawan (Episode I) <br>
+                            Jedi Knight (Episode II) <br>
+                            Jedi General (during The Clone Wars and Episode III) <br>
+                            Jedi Master (Episodes III-IV)<br>
+                        </p>
+                        <p class="text-info"> Occupation: <br>
+                            Jedi <br>
+                        </p>
+                        <p class="text-light"> Affiliation: <br>
+                            Jedi Order <br>
+                            Galactic Republic <br>
+                            Rebel Alliance <br>
+                        </p>
+                        <p class="text-info">
+                            Signifcant Other: Satine Kryze <br>
+                            Master: Qui-Gon Jinn
+                            Apprentices: Anakin Skywalker <br>
+                            Luke Skywalker <br>
+                            Homeworld: Stewjon
+                        </p> <br>
+                        <p>
+                            <a href="https://www.youtube.com/watch?v=67OtoET_JR8" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">Obi-Wan
+                                    Kenobi Fight Moments</button></a>
+                        </p> <br>
+                        <p>
+                            <a href="https://www.youtube.com/watch?v=eW7Y7Lo3F4o" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">Best Obi-Wan
+                                    Kenobi Quotes</button></a>
+                        </p> <a href="#Top">Back To Top</a>
+                    </div>
+                    <!-- OBI-WAN KENOBI (8) obi-wan -->
+
+                    <!--DARTH MAUL/Maul (9) maul -->
+
+                    <h2 id="S09">
+                        <a href="#">
+                            <h1><b class="starwars text-danger">Darth Maul/Maul <br>
+                                </b></h1>
+                        </a>
+                    </h2>
+                    <div>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/Darth_Maul" target="_blank"><button
+                                    class="btn btn-outline-danger text-light">For More Wikipedia Information Click
+                                    Here</button></a>
+                        </p>
+                        <p class="text-danger">
+                            Darth Maul/Maul
+                            <a href="https://www.youtube.com/watch?v=m2GA07iW8q0" target="_blank"><img
+                                    src="img3/Darth Maul.jpg" alt="" height="100px;" width="200px;"></a>
+                        </p>
+                        <p class="text-light">
+                            Created by George Lucas <br>
+                            First appearance The Phantom Menace (1999)</p> <br><br>
+
+                        <P class="text-info"> Darth Maul/Maul: <br>
+                            Real talk: Darth Maul was a pioneer. A man of few words, the Sith Lord with the Rorschach
+                            ink blot of a face was the
+                            first guy to break the mold on light-sabers, his double-bladed weapon paving the way for
+                            Kylo Ren's cross-sword beam
+                            in The Force Awakens. Even more importantly, he also inspired millions of Star Wars fans to
+                            ignore the fact that the
+                            most anticipated movie of all time was borderline unwatchable. <br><br>
+
+                            Refreshingly comfortable in his own skin for a series in which the villains are so often
+                            hiding their face or cloaking
+                            their true intentions, Darth Maul radiates pure evil through his jaundiced yellow eyeballs;
+                            George Lucas has described
+                            the big bad of The Phantom Menace as “a figure from one of
+                            his darkest nightmares.” (Which kind of makes you wonder where Jar Jar Binks came from.)
+                            <br><br>
+                        </p>
+                        <p class="text-light">
+                            In the fictional universe of Star Wars, Maul is a member of the Zabrak species hailing from
+                            Dathomir who is abducted
+                            by Sidious as a child and trained in the ways of the dark side of the Force. <br><br>
+
+                            He kills Jedi Master Qui-Gon Jinn on Naboo before being bisected by his apprentice, Obi-Wan,
+                            and presumed dead.
+                            <br><br>
+
+                            Surviving thanks to his mastery of the Force, Maul replaces the lower half of his body with
+                            cybernetics and is driven
+                            insane over a decade of isolation until his brother, Savage Opress, finds him during the
+                            Clone Wars. <br><br>
+
+                            Once his mind and body are restored by the Nightsister Mother Talzin, Maul obsessively seeks
+                            revenge against Obi-Wan,
+                            culminating in an alliance of various crime syndicates, a takeover of Mandalore, and the
+                            murder of Obi-Wan's lover,
+                            Duchess Satine Kryze. <br><br>
+
+                            Though he is captured by Sidious for becoming a rival, Maul escapes before the Republic is
+                            replaced by the Galactic
+                            Empire. He renounces his Sith title of "Darth", rebuilds his criminal organization, and
+                            meets Ezra Bridger on the Sith
+                            world of Malachor years later. <br><br>
+
+                            Maul uses Ezra to track Obi-Wan to Tatooine, where the two old rivals have a final
+                            confrontation that ends in Maul's
+                            death. <br><br>
+                        </P>
+                        <p class="text-info"> Family: <br>
+                            Savage Opress (brother) <br>
+                            Feral (brother) <br>
+                            Mother Talzin (mother) <br>
+                            <br>
+                        </p>
+                        <p class="text-light"> Occupation: <br>
+                            Dark Lord of the Sith <br>
+                            Crime lord <br>
+                            Ruler of Mandalore <br>
+
+                        </p>
+                        <p class="text-info"> Affiliation: <br>
+                            Nightbrother Clan <br>
+                            Sith Order <br>
+                            Trade Federation <br>
+                            Death Watch <br>
+                            Shadow Collective <br>
+                            Crimson Dawn <br>
+
+                        </p>
+                        <p class="text-light"> In-universe information: <br>
+                            Species: Dathomirian Zabrak <br>
+                            Gender: Male <br><br>
+
+                            Legends: <br>
+                            Kycina (mother) <br><br>
+
+                            Master: <br>
+                            Darth Sidious <br><br>
+
+                            Apprentice: <br>
+                            Savage Opress <br>
+                            Dryden Vos (Teräs Käsi) <br>
+                            Qi'ra (Teräs Käsi) <br>
+                            Ezra Bridger (claimant) <br><br>
+
+                            Homeworld: Dathomir <br><br>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/c04-OW6OjLw" target="_blank"><button
+                                    class="btn btn-outline-danger text-light">Darth
+                                    Maul/Maul Complete Life</button></a>
+                        </p> <br>
+                        <p>
+                            <a href="https://youtu.be/DMylmOlot4g" target="_blank"><button
+                                    class="btn btn-outline-danger text-light">Darth
+                                    Maul vs Qui-Gon Jinn</button></a>
+                        </p> <a href="#Top">Back To Top</a>
+                    </div>
+                    <!-- DARTH MAUL/Maul (9) maul-->
+
+                    <!-- LUKE SKYWALKER (10) luke-->
+                    <h2 id="S10">
+                        <a href="#">
+                            <h1><b class="starwars text-primary">Luke Skywalker <br>
+                                </b></h1>
+                        </a>
+                    </h2>
+                    <div>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/Luke_Skywalker" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">For More
+                                    Wikipedia Information Click Here</button></a>
+                        </p>
+                        <p class="text-primary">
+                            Luke Skywalker
+                            <a href="https://youtu.be/YRZG40yg_mY" target="_blank"><img src="img3/Luke Skywalker2.webp"
+                                    alt="" height="100px;" width="200px;"></a>
+                        </p>
+                        <p class="text-light">
+                            Created by George Lucas <br>
+                            First appearance Star Wars (1977) <br><br>
+                        </p>
+                        <P class="text-info"> Luke Skywalker: <br>
+                            Originally a farmer on Tatooine living with his uncle and aunt, Luke becomes a pivotal
+                            figure in the Rebel Alliance's struggle against the Galactic Empire. Even after he's
+                            mastered The Force, he still seems like one of us. <br><br>
+
+                            The son of fallen Jedi Knight Anakin Skywalker (turned Sith Lord Darth Vader) and Padmé
+                            Amidala, Luke is the twin brother of Rebellion leader Princess Leia and eventual
+                            brother-in-law of the smuggler Han Solo. <br><br>
+
+                            Luke trains to be a Jedi under Jedi Masters Obi-Wan Kenobi and Yoda and rebuilds the Jedi
+                            Order. He later trains his nephew Ben Solo and mentors Rey. Though Luke dies at the end of
+                            The Last Jedi, he returns as a Force spirit in The Rise of Skywalker, encouraging Rey to
+                            face her grandfather, the resurrected Emperor Palpatine. At the end of the film, the spirits
+                            of Luke and Leia give Rey their blessing to adopt the Skywalker surname and continue their
+                            family's legacy.
+
+                            The pivotal player in a decades-old interplanetary struggle for democracy, Luke is both
+                            compassionate and temperamental — and never sure if he's using his powers the right way.
+                            <br><br>
+
+                            Anyone who thinks of Star Wars as a simplistic story of good and evil needs to look more
+                            closely at the young Skywalker, who always seems to be on the brink of turning dark, even
+                            when he's saving the day. <br><br>
+                        </P>
+                        <p class="text-light"> Family: <br>
+                            Padmé Amidala (mother)
+                            Anakin Skywalker (father)
+                            Leia Organa (twin sister)
+                            Owen Lars (paternal step-uncle)
+                            Beru Lars (paternal step-aunt)
+                            Shmi Skywalker (paternal grandmother)
+                            Cliegg Lars (paternal step-grandfather)
+                            Han Solo (brother-in-law)
+                            Ben Solo (nephew) <br><br>
+
+                            Legends:
+                            Jacen Solo (nephew)
+                            Jaina Solo (niece)
+                            Anakin Solo (nephew)
+                            Cade Skywalker (descendant)
+                            Luuke Skywalker (clone)
+                            Jedi Council
+
+                        </p>
+                        <p class="text-info"> Occupation: <br>
+                            Apprentice <br>
+                            Moisture Farmer <br>
+                            Jedi <br><br>
+                        </p>
+                        <p class="text-light"> Affiliation Canon: <br>
+                            Rebel Alliance <br>
+                            Rogue Squadron <br>
+                            Jedi <br>
+                            New Republic <br>
+                            New Jedi Order <br>
+                            Resistance <br><br>
+
+                            Legends: <br>
+                            Galactic Alliance <br>
+                            Jedi Council <br>
+                        </p>
+                        <p class="text-info"> In Universe Information: <br>
+                            Full name: Luke Skywalker <br>
+                            Nickname: Wormie <br>
+                            Species: Human <br>
+                            Gender: Male <br>
+                            Spouse: Mara Jade (Legends) <br>
+                            Significant others: <br>
+                            Nakari Kelen <br>
+                            Tula Markona <br>
+
+
+                            Title: <br>
+                            Jedi Knight <br>
+                            Jedi Master <br>
+                            Red Five <br>
+                            Rogue Leader <br><br>
+
+                            Master: <br>
+                            Obi-Wan Kenobi <br>
+                            Yoda <br><br>
+
+                            Apprentice: <br>
+                            Leia Organa <br>
+                            New Jedi Order students <br>
+                            Grogu <br>
+                            Ben Solo <br>
+                            Rey <br>
+                            Homeworld: Tatooine <br>
+                            Birthplace: Polis Massa <br><br>
+                        </p>
+                        <p>
+                            <a href="https://www.youtube.com/watch?v=67OtoET_JR8" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">Luke
+                                    Skywalker</button></a>
+                        </p> <br>
+                        <p>
+                            <a href="https://www.youtube.com/watch?v=KgRu-5kud54" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">Best of
+                                    Luke Skywalker
+                                </button></a>
+                        </p> <a href="#Top">Back To Top</a>
+                    </div>
+                    <!--  LUKE SKYWALKER (10) luke-->
+
+                    <!-- STORM TROOPER (11) storm-->
+                    <h2 id="S11">
+                        <a href="#">
+                            <h1><b class="starwars text-success">Storm Troopers <br>
+                                </b></h1>
+                        </a>
+                    </h2>
+                    <div>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/Stormtrooper_(Star_Wars)" target="_blank"><button
+                                    class="btn btn-outline-success text-light">For More
+                                    Wikipedia Information Click Here</button></a>
+                        </p>
+                        <p class="text-success">
+                            Storm Troopers
+                            <a href="https://youtu.be/RzRwM_WZRNk" target="_blank"><img src="img3/Storm Trooper.jpg"
+                                    alt="" height="100px;" width="200px;"></a>
+                        </p>
+                        <p class="text-light">
+                            Created by George Lucas <br>
+                            First appearance Star Wars (1977) <br><br>
+                        </p>
+                        <P class="text-info"> Storm Trooper: <br>
+                            According to Star Wars lore, Imperial stormtroopers are men (and in rare cases, women) who
+                            have been recruited (or
+                            conscripted) at a young age to serve as expendable foot soldiers of the Empire, gradually
+                            replacing clone troopers as
+                            their accelerated aging forces them to retire. <br><br>
+
+                            These recruits are trained at Imperial Academies spread out across the galaxy where they
+                            undergo intense conditioning
+                            that instills fierce loyalty, strict discipline and ruthless efficiency while removing any
+                            sense of individualism or
+                            empathy. <br><br>
+
+                            As the backbone of the Imperial Army, stormtroopers are dreaded for their brutality,
+                            carrying out atrocities in the
+                            name of Emperor Palpatine, and their fanaticism, engaging the enemy with no regard to
+                            casualties. <br><br>
+
+                            Inevitably, some use their position for personal gain against a civilian population too
+                            terrified to resist. <br><br>
+
+                            However, inconsistencies in academy standards led to stormtroopers of varying combat skill
+                            and ability. <br><br>
+                        </P>
+                        <p class="text-light">
+                            After subduing any remaining Separatist holdouts left over from the Clone Wars,
+                            stormtroopers primarily serve as an
+                            internal security and peacekeeping force until the Galactic Civil War where they start to
+                            engage the Rebel Alliance in
+                            large-scale battles. <br><br>
+
+                            Unable to conscript millions of soldiers to fill its stormtrooper ranks, yet unwilling to
+                            switch back to using rapidly
+                            produced clone troopers, First Order stormtroopers are bred, trained and indoctrinated from
+                            birth, raised their entire
+                            lives for no other purpose. <br><br>
+
+                            First Order soldiers and crews have constantly trained for combat in war games and
+                            simulations, making them much more
+                            effective one-on-one than the endless waves of stormtrooper conscripts fielded by the
+                            Galactic Empire. <br><br>
+
+                            First Order stormtroopers are regularly put through mental indoctrination and propaganda
+                            programs, to make sure that
+                            they remain fanatically loyal and never hesitate or question orders. <br><br>
+
+                            Being taken from their families at birth, these soldiers are not even given individual names
+                            for themselves but merely
+                            serial numbers, such as "FN-2187".
+                        </p>
+                        <p class="text-info"> Occupation: <br>
+                            Soldiers <br>
+                        </p>
+                        <p class="text-light"> Affiliation: <br>
+                            Galactic Empire <br>
+                            First Order <br>
+                            Sith Eternal <br>
+                        </p>
+                        <p class="text-info"> In-universe Information: <br>
+                            Species: Human <br>
+                            Gender: Male and female <br><br>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/P9bDzHP6_Pk" target="_blank"><button
+                                    class="btn btn-outline-success text-light">Storm
+                                    Troopers Funny</button></a>
+                        </p> <br>
+                        <p>
+                            <a href="https://youtu.be/t7XfmSUvXgo" target="_blank"><button
+                                    class="btn btn-outline-success text-light"> Every Storm
+                                    Troopers</button></a>
+                        </p> <a href="#Top">Back To Top</a>
+                    </div>
+                    <!-- STORM TROOPER (11) storm -->
+
+                    <!-- PRINCESS LEIA (12) leia -->
+                    <h2 id="S12">
+                        <a href="#">
+                            <h1><b class="starwars text-primary">Princess Leia <br>
+                                </b></h1>
+                        </a>
+                    </h2>
+                    <div>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/Princess_Leia" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">For More
+                                    Wikipedia Information Click
+                                    Here</button></a>
+                        </p>
+                        <p class="text-primary">
+                            Princess Leia
+                            <a href="https://youtu.be/8N_Cj3ZS9-A" target="_blank"><img
+                                    src="img3/Princess Leia Organa 2.jpg" alt="" height="100px;" width="200px;"></a>
+                        </p>
+                        <p class="text-light">
+                            Created by George Lucas <br>
+                            First appearance Star Wars (1977) <br>
+                            Last appearance Obi-Wan Kenobi (2022) <br><br>
+                        </p>
+                        <P class="text-info"> Princess Leia: <br>
+                            When studio heads pay lip service to the importance of creating “proactive” female
+                            protagonists for
+                            their blockbusters, it shows how far Hollywood remains behind Lucas' conception of Princess
+                            Leia from almost 40 years ago. <br><br>
+
+                            Luke and Han may be the central heroes of the original trilogy; it's Leia, however,
+                            who provides its heart, which doesn't mean she isn't capable with a blaster. <br><br>
+
+                            The late, great Carrie Fisher turns her every line of dialogue into a mocking jab, refusing
+                            to let the smart, spitfire character settle into simply being a Death Star
+                            damsel-in-distress. <br><br>
+
+                            It's impossible to erase the fact that she and Luke kiss in the first film (and, er, the
+                            second film), but what's great about her love story with Han in The Empire Strikes Back is
+                            that it feels like a relationship of equals, the two strongest-willed people in the galaxy
+                            realizing they're nuts about one another. <br><br>
+
+                            As for the racy slave number from Return of the Jedi that jump-started a generation of boys'
+                            sexual awakening, just remember she managed to kill Jabba while rocking it. We miss you,
+                            Carrie. <br><br>
+                        </P>
+                        <p class="text-light"> Family: <br>
+                            Anakin Skywalker/Darth Vader (biological father) <br>
+                            Padmé Amidala (biological mother) <br>
+                            Luke Skywalker (twin brother) <br>
+                            Bail Organa (adoptive father) <br>
+                            Breha Organa (adoptive mother) <br><br>
+                        </p>
+                        <p class="text-info"> Occupation: <br>
+                            Supreme commander of the Resistance <br>
+                            Imperial Senator of Alderaan <br>
+                            Imperial Senate Ambassador <br>
+                            Princess of Alderaan <br><br>
+
+                            Legends: <br>
+                            Chief of State of the New Republic <br>
+                            Jedi <br><br>
+                        </p>
+                        <p class="text-light"> Affiliation: <br>
+                            Imperial Senate <br>
+                            Rebel Alliance <br>
+                            New Republic <br>
+                            Resistance <br><br>
+
+                            Legends: <br>
+                            Galactic Alliance <br>
+                            Jedi Council <br><br>
+                        </p>
+                        <p class="text-info"> In-Universe Information: <br>
+                            Full name: Leia Organa <br>
+                            Title: Princess <br>
+                            Senator <br>
+                            General <br><br>
+
+                            Spouse: Han Solo <br>
+                            Children: Ben Solo (son) <br>
+                            Legends: <br>
+                            Jaina Solo (daughter) <br>
+                            Jacen Solo (son) <br>
+                            Anakin Solo (son) <br>
+
+                            Master: Luke Skywalker <br><br>
+
+                            Apprentice: Rey <br><br>
+
+                            Homeworld: Alderaan <br>
+                            Birthplace: Polis Massa <br><br>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/5BSQuxaRoBY" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">Princess
+                                    Leia The Best Parts</button></a>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/LCaZ8z1RRgQ" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">Princess
+                                    Leia Greatest Moments</button></a>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/W_tCPI2WeHU" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">Princess
+                                    Leia Using The Force</button></a>
+                        </p> <a href="#Top">Back To Top</a>
+                    </div>
+                    <!-- PRINCESS LEIA (12) leia-->
+
+                    <!-- JABBA THE HUTT (13) jabba-->
+                    <h2 id="S13">
+                        <a href="#">
+                            <h1><b class="starwars text-success">Jabba The Hutt <br>
+                                </b></h1>
+                        </a>
+                    </h2>
+                    <div>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/Jabba_the_Hutt" target="_blank"><button
+                                    class="btn btn-outline-success text-light">For More
+                                    Wikipedia Information Click
+                                    Here</button></a>
+                        </p>
+                        <p class="text-success">
+                            Jabba The Hutt
+                            <a href="https://www.youtube.com/watch?v=OPcod8IS214" target="_blank"><img
+                                    src="img3/Jabba the Hut.webp" alt="" height="100px;" width="200px;"></a>
+                        </p>
+                        <p class="text-light">
+                            Created by George Lucas <br>
+                            First appearance:
+                            Return of the Jedi (1983; mentioned in original theatrical versions of preceding films)
+                            Six Against the Galaxy (1977; comic)
+                            The Phantom Menace (1999)
+                            <br><br>
+                        </p>
+                        <P class="text-info"> Jabba the Hutt: <br>
+                            Jabba the Hutt (full name: Jabba Desilijic Tiure) is a fictional character and minor
+                            antagonist in the Star Wars
+                            franchise. This repulsive, slovenly space slug whose response to mortal terror is a cold,
+                            deep laugh is, without a
+                            doubt, the finest Star Wars portrait of the id. <br><br>
+
+                            Jabba's Palace, a den of sin and sadism, is a wailin' time for those lucky enough to be in
+                            the gangster's good graces.
+                            <br><br>
+
+                            But its endless party is powered by a Caligula-like cycle of mania in which prized
+                            courtesans are fed to monstrous
+                            pit-dwelling beasts as an after-dinner entertainment; that he meets his end via the very
+                            chains he uses for his
+                            concubines is justice. <br><br>
+                        </P>
+                        <p class="text-light">
+                            In the films, Jabba is a powerful crime lord on the planet Tatooine, who is of the Hutt
+                            species. He is obese and often
+                            exemplifies his characterizations of lust and greed by having slave alien girls in his
+                            throne room. <br><br>
+
+                            He places a bounty on smuggler Han Solo, sending several bounty hunters to capture him.
+                            <br><br>
+
+                            Boba Fett captures Han Solo, Darth Vader freezes him, and after Boba Fett delivers him Jabba
+                            puts Han Solo on display
+                            in his palace. <br><br>
+
+                            Later, Princess Leia comes to save Han but is captured by Jabba, who turns her into a slave.
+                            <br><br>
+
+                            While Luke Skywalker comes to rescue them, Leia chokes Jabba to death by wrapping the chain
+                            connected to her around
+                            his neck. <br><br>
+                        </P>
+                        <p class="text-info"> Family Canon: <br>
+                            Crakka (cousin) <br>
+                            Ebor (uncle) <br>
+                            Gorga (nephew) <br>
+                            Graballa (nephew) <br>
+                            Hiro (cousin) <br>
+                            Mama (grandmother) <br>
+                            Papa (grandfather) <br>
+                            Ziro (uncle) <br>
+                            “The Twins” (cousins) <br><br>
+
+                            Legends: <br>
+                            Grubba (nephew) <br>
+                            Jiliac (uncle) <br>
+                            Pazda (uncle) <br>
+                            Tagta (cousin) <br>
+                            Zorba (father) <br><br>
+                        </p>
+                        <p class="text-light"> Occupation: <br>
+                            Crime lord <br><br>
+                        </p>
+                        <p class="text-info"> In-universe information: <br>
+                            Full name: Jabba Desilijic Tiure <br>
+                            Species: Hutt <br>
+                            Language: Huttese <br>
+                            Gender: Male <br>
+                            Children: Rotta the Hutt (son) <br>
+                            Homeworld: Nal Hutta <br><br>
+                        </p>
+                        <p>
+                            <a href="https://www.youtube.com/watch?v=o0Qhz2A5JXk" target="_blank"><button
+                                    class="btn btn-outline-success text-light">Jabba The
+                                    Hutt What You Didn't Know</button></a>
+                        </p> <br>
+                        <p>
+                            <a href="https://youtu.be/OZczsiCfQQk" target="_blank"><button
+                                    class="btn btn-outline-success text-light">Jabba The
+                                    Hutt Powerful Crime Lord</button></a>
+                        </p> <a href="#Top">Back To Top</a>
+                    </div>
+                    <!-- JABBA THE HUTT (13) jabba -->
+
+                    <!-- Padmé AMIDALA (14) padme -->
+                    <h2 id="S14">
+                        <a href="#">
+                            <h1><b class="starwars text-primary">Padmé Amidala <br>
+                                </b></h1>
+                        </a>
+                    </h2>
+                    <div>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/Padm%C3%A9_Amidala" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">For More
+                                    Wikipedia
+                                    Information Click Here</button></a>
+                        </p>
+                        <p class="text-primary">
+                            Padmé Amidala
+                            <a href="https://youtu.be/DeoGfNEGVS0" target="_blank"><img src="img3/Padmé Amidala.webp"
+                                    alt="" height="100px;" width="200px;"></a>
+                        </p>
+                        <p class="text-light">
+                            Created by George Lucas <br>
+                            First appearance The Phantom Menace (1999) <br><br>
+                        </p>
+                        <P class="text-info"> Padmé Amidala: <br>
+                            Almost unmentioned in the original trilogy, Luke and Leia's mom plays a major role in the
+                            prequels: going
+                            undercover as her own handmaiden in The Phantom Menace, fighting in a gladiatorial arena in
+                            Attack of the
+                            Clones, and trying to save her husband's soul in Revenge of the Sith. <br><br>
+
+                            She's right there with the boys, instead of worriedly wringing her hands back home. (Okay,
+                            maybe there's a little of that in Sith.) And as an early supporter of Senator Palpatine's
+                            plans, Padmé Amidala helps set in motion everything that befalls her, making her a lot like
+                            her son: a hero whose impulse to help sometimes worsens things. <br><br>
+
+                            Her combat skills are explored further through the Star Wars universe. In Star Wars: Episode
+                            II – Attack of the Clones she fights squads of battle droids with hand-to-hand combat and a
+                            blaster. Furthermore, in the film Amidala is shown to be quite physically impressive, and
+                            given her larger size compared to Leia uses strength more often in combat. In fact she is
+                            able to keep up with Jedi in speed and take huge falls with minimal damage. She is an expert
+                            markswoman; in the Star Wars: The Clone Wars episode "Assassin", she outguns bounty hunter
+                            Aurra Sing. <br><br>
+                        </P>
+                        <p class="text-light"> Family: <br>
+                            Jobal Naberrie (mother) <br>
+                            Ruwee Naberrie (father) <br>
+                            Sola Naberrie (sister) <br><br>
+
+                            Relatives Canon: <br>
+                            Han Solo (son-in-law) <br>
+                            Ben Solo (grandson) <br>
+                            Shmi Skywalker (mother-in-law) <br>
+                            Cliegg Lars (stepfather-in-law) <br>
+                            Owen Lars (stepbrother-in-law) <br>
+                            Beru Whitesun (stepsister-in-law) <br><br>
+                        </p>
+                        <p class="text-info"> Occupation: <br>
+                            Queen of Naboo <br>
+                            Senator of Naboo <br>
+                        </p>
+                        <p class="text-light"> Affiliation: <br>
+                            Royal House of Naboo <br>
+                            Galactic Republic <br>
+                        </p>
+                        <p class="text-info"> In-Universe Information: <br>
+                            Full Name: Padmé Amidala Naberrie <br>
+                            Species: Human <br>
+                            Gender: Female <br><br>
+
+                            Spouse: Anakin Skywalker <br>
+                            Significant Others: <br>
+                            Rush Clovis (formerly) <br>
+                            Palo (formerly) <br><br>
+
+                            Children: <br>
+                            Luke Skywalker (son) <br>
+                            Leia Organa (daughter) <br>
+                            Homeworld: Naboo <br><br>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/VnBA_ojGdn0" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">The Story of Padmé
+                                    Amidala</button></a>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/ThsvOeTmYd0" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">Anakin's Mourning of Padmé
+                                    Amidala Death</button></a>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/jfzji6cH5iM" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">Best Moments from Padmé
+                                    Amidala</button></a>
+                        </p> <a href="#Top">Back To Top</a>
+                    </div>
+                    <!--PADME AMIDALA (14) padme  -->
+
+                    <!-- JANGO FETT (15) jango -->
+                    <h2 id="S15">
+                        <a href="#">
+                            <h1><b class="starwars text-success">Jango Fett <br>
+                                </b></h1>
+                        </a>
+                    </h2>
+                    <div>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/Jango_Fett" target="_blank"><button
+                                    class="btn btn-outline-success text-light">For More Wikipedia Information Click
+                                    Here</button></a>
+                        </p>
+                        <p class="text-success">
+                            Jango Fett
+                            <a href="https://youtu.be/si0Lp1SLHXg" target="_blank"><img src="img3/Jango Fett.png" alt=""
+                                    height="100px;" width="200px;"></a>
+                        </p>
+                        <p class="text-light">
+                            Created by George Lucas <br>
+                            First appearance Attack of the Clones (2002) <br><br>
+                        </p>
+                        <P class="text-info"> Jango Fett: <br>
+                            He's “just a simple man trying to make my way in the universe,” but Jango Fett is legion —
+                            literally. <br><br>
+
+                            Through extensive cloning, the bounty hunter behind the blue Mandalorian armor is the basis
+                            not only for his
+                            better-known “son” Boba Fett, but for each and every trooper who gives Attack of the Clones
+                            its title. <br><br>
+
+                            From his knock-down drag-out brawl with Obi-Wan to their high-speed asteroid-field chase to
+                            his decapitation by Mace
+                            Windu's blade, he's a key part of the film's best action sequences. <br><br>
+
+                            Kudos to Kiwi actor Temuera Morrison, who gives the character rough-hewn gangster gravitas.
+                            <br><br>
+                        </p>
+                        <p class="text-light">
+                            Jango is covered in a sleek armored suit that conceals his scarred face, largely based on
+                            Boba Fett's iconic outfit
+                            (designed by Joe Johnston) from the original trilogy. <br><br>
+
+                            His suit was initially planned to be white to match the concept art for Boba Fett, but this
+                            was changed to silver and
+                            blue, in contrast to Boba's green, red, and orange. <br><br>
+
+                            Jango also uniquely has thigh, shin, and spat armor, as well as a comparative lack of
+                            accessories and trophies.
+                            <br><br>
+                        </P>
+                        <p class="text-info"> Relatives Legends: <br>
+                            Jaster Mereel (adoptive father) <br><br>
+                        </p>
+                        <p class="text-light"> Occupation: <br>
+                            Bounty Hunter <br>
+                            Mandalore of the True Mandalorians (formerly; Legends) <br><br>
+                        </p>
+                        <p class="text-info"> Affiliation: <br>
+                            Confederacy of Independent Systems <br>
+                            Mandalorians <br><br>
+                        </p>
+                        <p class="text-light"> In-Universe Information: <br>
+                            Species: Human <br>
+                            Gender: Male <br>
+                            Children: <br>
+                            Boba Fett (clone; adoptive son) <br>
+                            Omega (female clone; daughter) <br>
+                            Homeworld: Concord Dawn <br><br>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/8tMZdrUx8eM" target="_blank"><button
+                                    class="btn btn-outline-success text-light">Jango
+                                    Fett vs Obi-Wan Kenobi</button></a>
+                        </p> <br>
+                        <p>
+                            <a href="https://youtu.be/t4r0s2i0GB8" target="_blank"><button
+                                    class="btn btn-outline-success text-light">Jango
+                                    Fett's Full Story Explained</button></a>
+                        </p> <a href="#Top">Back To Top</a>
+                    </div>
+                    <!-- JANGO FETT (15) jango -->
+
+                    <!-- HAN SOLO (16) solo -->
+                    <h2 id="S16">
+                        <a href="#">
+                            <h1><b class="starwars text-primary">Han Solo <br>
+                                </b></h1>
+                        </a>
+                    </h2>
+                    <div>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/Han_Solo" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">For More Wikipedia Information Click
+                                    Here</button></a>
+                        </p>
+                        <p class="text-primary">
+                            Han Solo
+                            <a href="https://youtu.be/hh-zGP-LcQQ" target="_blank"><img src="img3/Han Solo.jpg" alt=""
+                                    height="100px;" width="200px;"></a>
+                        </p>
+                        <p class="text-light">
+                            Created by George Lucas <br>
+                            First appearance Star Wars (1977) <br><br>
+                        </p>
+                        <P class="text-info"> Han Solo: <br>
+                            “I love you!” <br>
+
+                            “I know.” <br><br>
+
+                            It's the galaxy's most notorious response to a proclamation of amore, but Han Solo is far
+                            more than a smug swashbuckler. First appearing in the original trilogy, Han Solo and his
+                            first mate Chewbacca are smugglers
+                            who are hired by Ben Kenobi and Luke Skywalker to transport them to Alderaan so they can
+                            deliver the stolen plans for the Death Star.
+                            <br><br>
+
+                            The scoundrel-turned Rebel leader may not be George Lucas's most unique creation, but the
+                            Falcon's scrappy flyboy is the original trilogy's most vital asset. <br><br>
+                        </p>
+                        <p class="text-light">
+                            Harrison Ford's classic masculinity and lopsided grin, worn with the casual flair of a man
+                            utterly at ease in the galaxy, made him a premiere heartthrob and the lifeblood of the
+                            franchise's holy trinity.
+                            <br><br>
+
+                            Although initially unwilling to join the Rebel Alliance in their fight against the Galactic
+                            Empire, he eventually does so and in the process falls in love with Princess Leia, whom he
+                            eventually marries, becoming
+                            Luke's brother in-law.
+                            <br><br>
+
+                            Beyond the charm, the funky ship, and the “who shot first?” arguments (Han did, of course,
+                            end of story), the Correllian smuggler's own conflicts make him the saga's most complex
+                            character.
+                            <br><br>
+
+                            Starry-eyed Luke instantly embraces the Force and the urgent drama of the Rebellion. Han
+                            takes some convincing, just as we do. In The Empire Strikes Back, still the series'
+                            high-water mark, Solo blossoms as a
+                            flawed hero grappling with opposing urges. <br><br>
+
+                            The deep-rooted survival instinct that drives his headstrong cockiness is shaken by love for
+                            Leia and the moral imperative of the Rebellion. Han's intuition, skill, and passion fly us
+                            through the trilogy's twists like the Falcon threading the needle of an asteroid field. Just
+                            don't ever tell him the odds. <br><br>
+                        </p>
+                        <p class="text-info">
+                            In the sequel trilogy set decades later, Solo joins forces with scavenger Rey and former
+                            stormtrooper Finn to help them and the Resistance in their fight against the First Order,
+                            whose forces are led by Supreme Leader Snoke and Kylo Ren, the latter of whom is his and
+                            Leia's son, Ben Solo who fell to the dark side of the force, which caused him and Leia to
+                            separate. <br><br>
+
+                            Han is killed by his son but eventually returns as a Force vision to his son and helps
+                            redeem him back to the light side of the force. <br><br>
+                        </P>
+                        <p class="text-light"> Alias: <br>
+                            Captain Solo <br>
+                            Cadet 124-239 <br><br>
+                        </p>
+                        <p class="text-info"> Occupation: <br>
+                            Conscript in the Imperial Forces <br>
+                            Captain of the Millennium Falcon <br>
+                            General in the Rebel Alliance <br>
+                            Smuggler <br><br>
+                        </p>
+                        <p class="text-light"> Affiliation: <br>
+                            Galactic Empire,
+                            Rebel Alliance,
+                            New Republic,
+                            Resistance <br><br>
+
+                            Legends:
+                            Galactic Alliance (in Legends) <br><br>
+                        </p>
+                        <p class="text-info"> Relatives: <br>
+                            Luke Skywalker (brother-in-law) <br>
+                            Owen Lars (step uncle-in-law) <br>
+                            Beru Whitesun (step aunt-in-law) <br>
+                            Anakin Skywalker (father-in-law) <br>
+                            Padmé Amidala (mother-in-law) <br>
+                            Shmi Skywalker (grandmother in-law) <br>
+                            Cliegg Lars (step grandfather-in-law) <br><br>
+                        </p>
+                        <p class="text-light"> In-Universe Information: <br>
+                            Gender: Male <br>
+                            Nationality: Corellian <br>
+                            Spouse: Leia Organa <br>
+                            Sana Starros (Stennessian scam) <br>
+                            Significant Other: Qi'ra (formerly) <br>
+                            Children: Current canon: <br>
+                            Ben Solo / Kylo Ren (son) <br><br>
+
+                            Title: <br>
+                            Cadet (Imperial Navy) <br>
+                            Trooper (Imperial Army) <br>
+                            Captain (civilian smuggler) <br>
+                            General (Rebel Alliance) <br>
+
+                            Homeworld: Corellia <br><br>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/5grHLZlkp4Y" target="_blank"><button
+                                    class="btn btn-outline-primary text-light"> Top Ten Moments of Han
+                                    Solo</button></a>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/bdrErkGQPB0" target="_blank"><button
+                                    class="btn btn-outline-primary text-light"> Han Solo and Chewbacca Back On The
+                                    Falcon</button></a>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/jPEYpryMp2s" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">Solo Trailer Han
+                                    Solo</button></a>
+                        </p> <a href="#Top">Back To Top</a>
+                    </div>
+                    <!--HAN SOLO (16) solo -->
+
+                    <!-- GENERAL GRIEVOUS (17) grievous -->
+                    <h2 id="S17">
+                        <a href="#">
+                            <h1><b class="starwars text-success">General Grievous <br>
+                                </b></h1>
+                        </a>
+                    </h2>
+                    <div>
+
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/General_Grievous" target="_blank"><button
+                                    class="btn btn-outline-success text-light">For More
+                                    Wikipedia Information Click Here</button></a>
+                        </p>
+                        <p class="text-success">
+                            General Grievous
+                            <a href="https://youtu.be/pv-KFXQ8kG4" target="_blank"><img src="img3/General Grievous.webp"
+                                    alt="" height="100px;" width="200px;"></a>
+                        </p>
+                        <p class="text-light">
+                            Created by George Lucas <br>
+                            First appearance Clone Wars- "Chapter 20" (2004) <br><br>
+                        </p>
+                        <P class="text-info"> General Grievous: <br>
+                            His name sounds like a Victorian medical condition, but this evil cyborg one of the more
+                            complex villains in Revenge
+                            of the Sith. Though mostly robotic, there's just enough failing organic matter in this bad
+                            guy to keep him hunched
+                            over and hacking. But when it's time to face-off against Obi-Wan he shakes off his cloak to
+                            reveal an extra set of
+                            arms and a knack for wielding lightsabers. (And spinning them like brightly-lit windmills.)
+                            <br><br>
+                        </p>
+                        <p class="text-light">
+                            Unable to best him using laser swords, Kenobi tears open Grievous' chest to fire blasters at
+                            his shriveled internal
+                            organs until fire spews from his eyes. <br><br>
+
+                            Grievous' cyborg body was specifically designed to rival the abilities of the Jedi. Standing
+                            at 7 ft 1 in (216 cm),
+                            his imposing presence serves to instill fear in his opponents to give him a psychological
+                            advantage in battle.
+                            <br><br>
+                        </p>
+                        <p class="text-info">
+                            While he is not Force-sensitive, Grievous has been trained in all forms of lightsaber combat
+                            by Count Dooku. Each of
+                            his mechanical arms can separate in half, allowing him to wield four lightsabers at once to
+                            overwhelm his enemies. His
+                            cybernetic enhancements give him exceptional strength, speed and reflexes to outmaneuver
+                            Force-users and even the
+                            Force itself. <br><br>
+                        </P>
+                        <p class="text-light">
+                            In spite of Grievous' physical and acrobatic prowess, Dooku has advised him to retreat
+                            should he lose the elements of
+                            surprise and intimidation, and thus his advantage, in a fight against the Force-sensitive
+                            Jedi. Grievous often heeds
+                            his mentor's advice and becomes known as one of the Jedi's most elusive adversaries during
+                            the Clone Wars. <br><br>
+                        </p>
+                        <p class="text-info"> Occupation: <br>
+                            Warlord <br>
+                            Supreme Martial Commander of the Separatist Droid Armies <br>
+                            Jedi hunter <br><br>
+                        </p>
+                        <p class="text-light"> Affiliation: <br>
+                            Confederacy of Independent Systems <br><br>
+                        </p>
+                        <p class="text-info"> In-Universe Information: <br>
+                            Full name: Qymaen jai Sheelal <br>
+                            Species: Kaleesh cyborg <br>
+                            Gender: Male <br>
+                            Master: Count Dooku (lightsaber combat) <br>
+                            Apprentice: IG-100 MagnaGuards (melee combat) <br>
+                            Homeworld: Kalee <br><br>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/_psg8s9I2Bg" target="_blank"><button
+                                    class="btn btn-outline-success text-light">General
+                                    Grievous Death</button></a>
+                        </p> <br>
+                        <p>
+                            <a href="https://youtu.be/iyck9AKw1fI" target="_blank"><button
+                                    class="btn btn-outline-success text-light">General
+                                    Grievous' Complete Story</button></a>
+                        </p> <a href="#Top">Back To Top</a>
+                    </div>
+                    <!-- GENERAL GRIEVOUS (17) grievous-->
+
+                    <!-- CHEWBACCA (WOOKIE) (18) chewy -->
+                    <h2 id="S18">
+                        <a href="#">
+                            <h1><b class="starwars text-primary">Chewbacca (Wookie) <br>
+                                </b></h1>
+                        </a>
+                    </h2>
+                    <div>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/Chewbacca" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">For More
+                                    Wikipedia Information Click Here</button></a>
+                        </p>
+                        <p class="text-primary">
+                            Chewbacca (Wookie)
+                            <a href="https://youtu.be/87oYwqUA_qY" target="_blank"><img src="img3/Chewbacca.webp" alt=""
+                                    height="100px;" width="200px;"></a>
+                        </p>
+                        <p class="text-light">
+                            Created by George Lucas <br>
+                            First appearance Star Wars (1977) <br><br>
+                        </p>
+                        <P class="text-info"> Chewbacca: <br>
+                            The quintessential loyal buddy and irascible sidekick, Chewbacca is the Wookie you want next
+                            to you in the foxhole — or, more likely, as your copilot in the Millennium Falcon. The fact
+                            that no one in the audience knew what Chewie was ever saying was part of the character's
+                            appeal. <br><br>
+
+                            Chewbacca speaks only in his native language, Shyriiwook (which sounds like animal sound
+                            growls); he is able to understand English, but is physically unable to speak it. <br><br>
+                        </p>
+                        <p class="text-light">
+                            Everybody in the Star Wars universe understood his moans and growls, which helped make the
+                            movies seem exotic, multicultural and inclusive in a deeply comforting way. Of course, the
+                            irony was that the franchise's tallest, most fearsome wild animal was, in actuality, the
+                            biggest softie at heart. <br><br>
+
+                            It's his anguished cry when Han Solo gets put into carbonite that makes that indelible
+                            sequence from The Empire Strikes Back so gut-wrenching: He's losing his best friend, and you
+                            feel his pain. <br><br>
+                        </p>
+                        <p class="text-info">
+                            Chewbacca, a 200-year-old wookiee, becomes a young Han Solo's companion after they both
+                            escape Imperial captivity on Mimban. After a series of adventures on Vandor and Kessel,
+                            Chewbacca embarks on the smuggling trade, serving as Han's co-pilot on the Millennium Falcon
+                            for the rest of Han's life. <br><br>
+
+                            Standing 8 feet (2.4 m) tall, Chewbacca is covered with long hair and wears only a
+                            bandolier. His weapon of choice is the Wookiee bowcaster (a crossbow-shaped directed-energy
+                            weapon). <br><br>
+
+                            Chewbacca was named one of the "greatest sidekicks" in film history by Entertainment Weekly.
+                            <br><br>
+                        </P>
+                        <p class="text-light"> Family: <br>
+                            Attichitcuk (Itchy) (father) <br>
+                            Unnamed mother <br><br>
+
+                            Relatives Legends: <br>
+                            Kallabow (sister) <br>
+                            Lowbacca (nephew) <br>
+                            Sirrakuk (niece) <br><br>
+                        </p>
+                        <p class="text-info"> Occupation: <br>
+                            Co-pilot and first mate on Millennium Falcon <br><br>
+                        </p>
+                        <p class="text-light"> Affiliation: <br>
+                            Galactic Republic <br>
+                            Rebel Alliance <br>
+                            New Republic <br>
+                            Resistance <br><br>
+                        </p>
+                        <p class="text-info"> In-Universe Information: <br>
+                            Species: Wookiee <br>
+                            Gender: Male <br>
+                            Spouse: Mallatobuck (Malla) <br>
+                            Children: <br>
+                            Lumpawarrump (Lumpy)/
+                            Lumpawaroo (Waroo) (son)
+                            Homeworld: Kashyyyk <br><br>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/jotTxQ6P3wc" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">Chewbacca's Entire Back Story
+                                </button></a>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/ONhZWPdt-zY" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">Chewbacca's Best Moments
+                                </button></a>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/om5KtBt1B5Y" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">Chewbacca Meets Han Solo</button></a>
+                        </p> <a href="#Top">Back To Top</a>
+                    </div>
+                    <!-- CHEWBACCA (WOOKIE) (18) chewy -->
+
+                    <!-- BIB FORTUNA (19) bib -->
+                    <h2 id="S19">
+                        <a href="#">
+                            <h1><b class="starwars text-danger">Bib Fortuna
+                                </b></h1>
+                        </a>
+                    </h2>
+                    <div>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/Bib_Fortuna" target="_blank"><button
+                                    class="btn btn-outline-danger text-light">For More
+                                    Wikipedia Information Click Here</button></a>
+                        </p>
+                        <p class="text-danger">
+                            Bib Fortuna
+                            <a href="https://youtu.be/ZPX_prlm3Sc" target="_blank"><img src="img3/Bib Fortuna.webp"
+                                    alt="" height="100px;" width="200px;"></a>
+                        </p>
+                        <p class="text-light">
+                            Created by George Lucas <br>
+                            First appearance Return of the Jedi (1983) <br>
+                            Last appearance "Chapter 4: The Gathering Storm" (2022) (The Book of Boba Fett)<br><br>
+                        </p>
+                        <P class="text-info"> Bib Fortuna: <br>
+                            Bib Fortuna is a member of the Twi'lek species, humanoids distinguished by the pair of long
+                            tentacular appendages that
+                            protrude from the back of their heads, which are known as lekku. Fortuna's dialogue in the
+                            film is delivered in
+                            Huttese, the fictional language also spoken by Jabba.<br><br>
+                        </p>
+                        <p class="text-light">
+                            Fortuna works as the majordomo and chief aide for Jabba the Hutt, a slug-like alien and one
+                            of the most powerful crime
+                            lords in the galaxy. In this capacity, Fortuna controls most operations within Jabba's
+                            palace on the desert planet of
+                            Tatooine. Among these duties are welcoming visitors who come to the palace, and vetting them
+                            before they appear before
+                            Jabba. <br><br>
+                        </p>
+                        <p class="text-info">
+                            Jabba the Hutt's right-hand man may have been no match for Jedi mind tricks, but when the
+                            Rebels weren't setting up a
+                            complex prison break for Han Solo, the sniveling Twi'lek did an ace job of keeping the
+                            debauchery and illegality of
+                            the Palace running smoothly. <br><br>
+                        </p>
+                        <p class="text-light">
+                            He had the good fortune to have his lekku (or “brain-tail”) dip nder his chin like a bib, a
+                            wonderful coincidence
+                            considering his given name. And being the obsequious slime that he was, he somehow survived
+                            the battle on Jabba's
+                            skiff near the Great Pit of Carcoon. <br><br>
+                        </p>
+                        <p class="text-info">
+                            Fortuna is the first Twi'lek character to appear in Star Wars, although the species did not
+                            receive a name until the
+                            publication of the Star Wars Sourcebook, a 1987 sourcebook for Star Wars: The Roleplaying
+                            Game. With pale,
+                            mucus-covered skin and sharp, snaggly teeth, Fortuna is originally from the planet Ryloth,
+                            the Twi'lek homeworld.
+                            <br><br>
+                        </P>
+                        <p class="text-light"> Occupation: <br>
+                            Daimyo <br>
+                            Majordomo <br>
+                            Chief aide to Jabba the Hutt <br><br>
+                        </p>
+                        <p class="text-info"> Affiliation: <br>
+                            Jabba the Hutt <br><br>
+                        </p>
+                        <p class="text-light"> In-Universe Information: <br>
+                            Species: Twi'lek <br>
+                            Gender: Male <br>
+                            Relatives: Beezer Fortuna (cousin) <br>
+                            Homeworld: Ryloth <br><br>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/E3P15df6ct0" target="_blank"><button
+                                    class="btn btn-outline-danger text-light">All
+                                    Bib Fortuna Lines</button></a>
+                        </p> <br>
+                        <p>
+                            <a href="https://youtu.be/tXEUyF0teC8" target="_blank"><button
+                                    class="btn btn-outline-danger text-light">All Bib
+                                    Fortuna Scenes</button></a>
+                        </p> <a href="#Top">Back To Top</a>
+                    </div>
+                    <!-- BIB FORTUNA (19) bib -->
+
+                    <!-- C-3PO (20) c-3po -->
+                    <h2 id="S20">
+                        <a href="#">
+                            <h1><b class="starwars text-primary">C-3PO<br>
+                                </b></h1>
+                        </a>
+                    </h2>
+                    <div>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/C-3PO" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">For
+                                    More Wikipedia Information Click Here</button></a>
+                        </p>
+                        <p class="text-primary">
+                            C-3PO
+                            <a href="https://youtu.be/w8Y08C_Rqdg" target="_blank"><img src="img3/C-3PO.webp" alt=""
+                                    height="100px;" width="200px;"></a>
+                        </p>
+                        <p class="text-light">
+                            Created by George Lucas <br>
+                            First appearance Star Wars (1977) <br><br>
+                        </p>
+                        <P class="text-info"> C-3PO: <br>
+                            Boasting that he is “fluent in over six million forms of communication” (even though the
+                            only language you ever hear
+                            him speak is overly affected stage British), the protocol droid that Anakin Skywalker
+                            fashioned from rusted Tatooine
+                            junk immediately assured his place in Star Wars history: He's the very first character to
+                            appear onscreen in A New
+                            Hope. A constant staple of George Lucas' space saga ever since, the metal worrywart jerks
+                            around the galaxy like a
+                            robot Woody Allen (“We're doomed! We'll all be destroyed for sure”). But that human element
+                            is precisely what's made
+                            Threepio such an inextricable part of the franchise, the droid's pristine moral compass
+                            forever imbuing the Star Wars
+                            movies with their vivid sense of life. <br><br>
+                        </p>
+                        <p class="text-light">
+                            In the majority of depictions, C-3PO's physical appearance is primarily a polished gold
+                            plating with a silver plated right leg (from knee joint to ankle), although his appearance
+                            varies throughout the films; including the absence of metal coverings in The Phantom Menace,
+                            a dull copper plating in Attack of the Clones, and a red left arm in The Force
+                            Awakens. <br><br>
+                        </P>
+                        <p class="text-info"> Alias: <br>
+                            Throughout the film C-3PO is a foil to R2-D2's antics, even when C-3PO translates R2-D2's
+                            machine speech for the audience. C-3PO is originally the property of the captain on the
+                            Tantive IV, but seems to follow R2-D2 in a relationship akin to those between human
+                            children; C-3PO often following R2-D2 around, and R2-D2 needing C-3PO to translate for
+                            him.[d] When R2-D2 is damaged in the Battle of Yavin, C-3PO offers to donate any mechanical
+                            parts helpful in his repair; but this transference is never confirmed. <br><br>
+                        </p>
+                        <p class="text-light"> Occupation: <br>
+                            Protocol droid <br><br>
+                        </p>
+                        <p class="text-info"> Affiliation: <br>
+                            Skywalker family <br>
+                            Galactic Republic <br>
+                            Rebel Alliance <br>
+                            New Republic <br>
+                            Resistance <br>
+                            R2-D2 <br><br>
+                        </p>
+                        <p class="text-light"> In-Universe Information: <br>
+                            Nickname: Threepio <br>
+                            Species: Droid <br>
+                            Creator: Anakin Skywalker <br>
+                            Homeworld: Tatooine <br><br>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/NeLn-l00yV8" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">C-3PO Meeting R2-D2</button></a>
+                        </p> <br>
+                        <p>
+                            <a href="https://youtu.be/Z_OjTojCNm0" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">C-3PO And His Whining</button></a>
+                        </p> <a href="#Top">Back To Top</a>
+                    </div>
+                    <!-- C-3PO (20) c-3po -->
+
+                    <!-- KYLO REN/Ben Solo (21) kyloren -->
+                    <h2 id="S21">
+                        <a href="#">
+                            <h1><b class="starwars text-danger">Kylo Ren/Ben Solo <br>
+                                </b></h1>
+                        </a>
+                    </h2>
+                    <div>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/Kylo_Ren" target="_blank"><button
+                                    class="btn btn-outline-danger text-light">For More
+                                    Wikipedia Information Click Here</button></a>
+                        </p>
+                        <p class="text-danger">
+                            Kylo Ren/Ben Solo
+                            <a href="https://youtu.be/m4xR7bhKP6s" target="_blank"><img src="img3/Kylo Ren.jpg" alt=""
+                                    height="100px;" width="200px;"></a>
+                        </p>
+                        <p class="text-light">
+                            Created by George Lucas <br>
+                            First appearance The Force Awakens (2015)
+                            <br><br>
+                        </p>
+                        <P class="text-info"> Kylo Ren: <br>
+                            What happens when you have the power of the Dark Side but lack the self-confidence to
+                            properly wield it? You get Kylo Ren, the masked menace with the fiery red lightsaber who
+                            serves as The Force Awakens' main antagonist. <br><br>
+                        </p>
+                        <p class="text-light">
+                            Fueled by the off-kilter intensity of actor Adam Driver, the Star Wars Universe's new Dark
+                            Lord is the emo missing link between Hayden Christen's petulant Anakin and James Earl
+                            Jones's implacable Darth Vader. He's strong enough to stop blaster bolts in mid-air (and to
+                            kill his own father) but still prone to temper tantrums that leave his underlings running
+                            for cover. A fascinating study in contradictions. <br><br>
+
+                            Kylo Ren is the chosen name of Ben Solo, the child of original Star Wars trilogy characters
+                            Han Solo and Princess Leia Organa.
+                        </p>
+                        <p class="text-info">
+                            Though initially trained as a Jedi by his uncle Luke Skywalker, Ben was seduced to the dark
+                            side of the Force by Supreme Leader Snoke, and aspires to be as powerful as his grandfather,
+                            the Sith Lord Darth Vader. <br><br>
+                        </p>
+                        <p class="text-light">
+                            Throughout the sequel trilogy, Kylo Ren serves as the master of the Knights of Ren, a
+                            high-ranking member of the First Order, and both an adversary and romantic interest to Rey.
+                            <br><br>
+
+                            After he kills and usurps Snoke as Supreme Leader, Ren discovers that he shares a connection
+                            with Rey called a 'Force dyad' and is eventually redeemed like his grandfather before him
+                            when he sacrifices himself to help Rey defeat the revived Emperor Palpatine. <br><br>
+                        </P>
+                        <p class="text-info"> Family: <br>
+                            Han Solo (father) <br>
+                            Leia Organa (mother) <br><br>
+
+                            Relatives: <br>
+                            Anakin Skywalker (maternal grandfather) <br>
+                            Padmé Amidala (maternal grandmother) <br>
+                            Luke Skywalker (maternal uncle) <br>
+                            Shmi Skywalker (maternal great-grandmother) <br>
+                            Bail Organa (adoptive maternal great-grandfather) <br>
+                            Breha Organa (adoptive maternal great-grandmother) <br>
+                            Dyad Rey (love interest) <br><br>
+                        </p>
+                        <p class="text-light"> Occupation: <br>
+                            Jedi Padawan <br>
+                            Supreme Leader of the First Order <br>
+                            Master of the Knights of Ren <br><br>
+                        </p>
+                        <p class="text-info"> Affiliation: <br>
+                            Jedi Order <br>
+                            First Order <br>
+                            Knights of Ren <br><br>
+                        </p>
+                        <p class="text-light"> In-universe information: <br>
+                            Full Name: Ben Solo <br>
+                            Species: Human <br>
+                            Gender: Male <br>
+                            Title: Kylo Ren <br>
+                            Master: <br>
+                            Luke Skywalker (as a Jedi) <br>
+                            Snoke <br>
+                            Palpatine (secretly) <br>
+                            Homeworld: Chandrila <br><br>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/D4cugJ7JzvM" target="_blank"><button
+                                    class="btn btn-outline-danger text-light">Kylo
+                                    Ren/Ben Solo Kills Supreme Leader Snoke</button></a>
+                        </p> <br>
+                        <p>
+                            <a href="https://youtu.be/hh-zGP-LcQQ" target="_blank"><button
+                                    class="btn btn-outline-danger text-light">Kylo
+                                    Ren/Ben Solo Kills Han Solo</button></a>
+                        </p> <a href="#Top">Back To Top</a>
+                    </div>
+                    <!-- KYLO REN/Ben Solo (21) kyloren -->
+
+                    <!-- R2-D2 (22) r2-d2 -->
+                    <h2 id="S22">
+                        <a href="#">
+                            <h1><b class="starwars text-primary">R2-D2 <br>
+                                </b></h1>
+                        </a>
+                    </h2>
+                    <div>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/R2-D2" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">For More
+                                    Wikipedia Information Click Here</button></a>
+                        </p>
+                        </button>
+                        <p class="text-primary">
+                            R2-D2
+                            <a href="https://youtu.be/B6mh45mA_JY" target="_blank"><img src="img3/R2-D2.jpg" alt=""
+                                    height="100px;" width="200px;"></a>
+                        </p>
+                        <p class="text-light">
+                            Created by George Lucas <br>
+                            First appearance Star Wars (1977) <br><br>
+                        </p>
+                        <P class="text-info"> R2-D2: <br>
+                            R2-D2 stands for Second Generation Robotic Droid Series-2 <br><br>
+
+                            While his partner frets, nags, and offers the occasional translation, our favorite compact,
+                            diminutive friend bloops and bleeps the gang out of sticky situations. <br><br>
+
+                            Need a wingman in aerial dogfights against the Imperial Fleet? Bleep-bloop-bleep. Garbage
+                            compactor mere seconds away from crushing the heroes of the Rebel Alliance?
+                            Bleep-bloop-bloop-bleep. A disembodied, discombobulated C-3PO wriggling on the
+                            ground, in need of rescue — again? Bloop-bloop-whistle. <br><br>
+                        </P>
+                        <p class="text-light">
+                            R2-D2 gets it done. The droid can even be outfitted to serve drinks. Along with Yoda, he's
+                            perhaps the only Star Wars character to be a paragon of excellence in both the prequels and
+                            the original trilogy, and the surest way out of a jam. Only con: Easily tipped over.
+                        </p>
+                        <p class="text-info"> Occupation: <br>
+                            Astromech droid <br><br>
+                        </p>
+                        <p class="text-light"> Affiliation: <br>
+                            Kingdom of Naboo <br>
+                            Galactic Republic <br>
+                            Rebel Alliance <br>
+                            New Republic <br>
+                            C-3PO <br><br>
+                        </p>
+                        <p class="text-info"> In-Universe Information: <br>
+                            Nickname: Artoo (R2) <br>
+                            Species: Droid R2 Unit <br>
+                            Homeworld: Naboo <br><br>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/2-BKjnAgNgY" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">R2-D2 Sounds</button></a>
+                        </p> <br>
+                        <p>
+                            <a href="https://youtu.be/JLmOteqmDYc" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">Every Time R2-D2 Saves The
+                                    Day</button></a>
+                        </p> <a href="#Top">Back To Top</a>
+                    </div>
+                    <!-- R2-D2 (22) r2-d2 -->
+
+                    <!-- BOBA FETT (23) bobafett -->
+                    <h2 id="S23">
+                        <a href="#">
+                            <h1><b class="starwars text-success">Boba Fett <br>
+                                </b></h1>
+                        </a>
+                    </h2>
+                    <div>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/Boba_Fett" target="_blank"><button
+                                    class="btn btn-outline-success text-light">For More
+                                    Wikipedia Information Click Here</button></a>
+                        </p>
+                        <p class="text-success">
+                            Boba Fett
+                            <a href="https://youtu.be/9SIizQuwIpI" target="_blank"><img src="img3/Boba Fett.webp" alt=""
+                                    height="100px;" width="200px;"></a>
+                        </p>
+                        <p class="text-light">
+                            Created by George Lucas <br>
+                            First appearance Star Wars Holiday Special (1978) <br><br>
+                        </p>
+                        <P class="text-info"> Boba Fett: <br>
+                            Everyone's favorite intergalactic bounty hunter made his first canonical appearance in The
+                            Empire Strikes Back,
+                            chasing down Han Solo for Jabba the Hutt. <br><br>
+
+                            But even before that, Boba Fett was well-known to the Star Wars hardcore, who'd seen the
+                            character march in a
+                            California parade and pop up in animated form in the notorious Star Wars Holiday Special —
+                            both in 1978. <br><br>
+                        </p>
+                        <p class="text-light">
+                            Jango's little boy-clone was a hit before he'd even really done anything on the big screen.
+                            And given that he's barely
+                            in the original trilogy, some may wonder why he's so popular. <br><br>
+
+                            So we'll say it again: Intergalactic. Bounty. Hunter. Throw in the armor and the rocket
+                            launcher, and it's no wonder
+                            that Lucas felt compelled to make the Fett family so integral to the prequels. Some
+                            characters demand to get off the
+                            side of the stage and into the thick of the action. <br>
+                        </p>
+                        <p class="text-info">
+                            The character needed to be designed quickly, as Lucas had agreed for him to be featured in
+                            the Star Wars Holiday
+                            Special later that year. The character's design stemmed from initial concepts for Darth
+                            Vader, who was originally
+                            conceived as a rogue bounty hunter. <br><br>
+
+                            While Vader became less of a mercenary and more of a dark knight, the bounty hunter concept
+                            remained, and Fett became
+                            "an equally villainous" but "less conspicuous" character. <br><br>
+                        </P>
+                        <p class="text-light"> Alias: <br>
+                            Alias: Alpha (clone code name) <br><br>
+
+                            Family: <br>
+                            Jango Fett (clone host; adoptive father) <br>
+                            Omega (clone counterpart; sister) <br><br>
+
+                            Relatives Legends: <br>
+                            Mirta Gev (granddaughter) <br>
+                            Ghes Orade (grandson-in-law) <br>
+                            Jaster Mereel (adoptive grandfather) <br>
+                        </p>
+                        <p class="text-info"> Occupation: <br>
+                            Occupation Crime lord <br>
+                            Bounty hunter (formerly) <br><br>
+                        </p>
+                        <p class="text-light"> Affiliation: <br>
+                            Bounty Hunter's Guild <br>
+                            Mandalorians <br>
+                            Confederacy of Independent Systems <br>
+                            Krayt's Claw <br>
+                            Galactic Empire <br>
+                            Hutt Clan <br>
+                            Tusken Raiders <br><br>
+                        </p>
+                        <p class="text-info"> In- Universe Information: <br>
+                            Full Name: Boba Fett <br>
+                            Species: Human (clone) <br>
+                            Gender: Male <br><br>
+
+                            Spouse Legends:
+                            Sintas Vel (ex-wife) <br><br>
+
+                            Children Legends:
+                            Aylin Vel (daughter, deceased) <br>
+
+                            Partner: <br>
+                            Fennec Shand <br>
+                            Bossk (formerly) <br>
+                            Dengar (formerly) <br><br>
+
+                            Homeworld: Kamino <br><br>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/BlAz5ZiIqpg" target="_blank"><button
+                                    class="btn btn-outline-success text-light">Boba
+                                    Fett Story Explained</button></a>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/ZCdje_TOg_M" target="_blank"><button
+                                    class="btn btn-outline-success text-light">Boba
+                                    Fett All Scenes Star Wars</button></a>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/9JZlqLRYWtU" target="_blank"><button
+                                    class="btn btn-outline-success text-light">Boba
+                                    Fett All Scenes Mandalorian</button></a>
+                        </p> <a href="#Top">Back To Top</a>
+                    </div>
+                    <!-- BOBA FETT (23) bobafett -->
+
+                    <!-- WICKET W WARRICK (24) ewok -->
+                    <h2 id="S24">
+                        <a href="#">
+                            <h1><b class="starwars text-primary">Wicket Wystri Warrick
+                                    (Ewok)<br></b></h1>
+                        </a>
+                    </h2>
+                    <div>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/Wicket_W._Warrick" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">For
+                                    More Wikipedia Information Click Here</button></a>
+                        </p>
+                        <p class="text-primary">
+                            Wicket Wystri Warrick (Ewok)
+                            <a href="https://youtu.be/MVQWBkPSs8k" target="_blank"><img src="img3/Wicket W Warrick.webp"
+                                    alt="" height="100px;" width="200px;"></a></p>
+                        <p class="text-light">
+                            Created by George Lucas <br>
+                            First appearance Return of the Jedi (1983)
+                            Last appearance The Rise of Skywalker (2019) <br><br>
+                        </p>
+                        <P class="text-info"> Wicket W. Warrick: <br>
+                            The clever native in a leather hoodie wasn't a tribal leader or even an ambitious warrior;
+                            he's just your typical Everyewok, saving his best moves for cozying up to Han Solo during
+                            tender moments. <br><br>
+                        </p>
+                        <p class="text-light">
+                            Wicket is a diminutive teddy bear-like creature known as an Ewok, living on the forest moon
+                            of Endor and eventually participating in the Battle of Endor as an ally of the Rebel
+                            Alliance, because of his encounter with the Rebel officers the alliance helped destroy the
+                            Empire. <br><br>
+                        </p>
+                        <p class="text-info">
+                            Wicket is the most prominently featured Ewok in Return of The Jedi. During his travels, he
+                            encounters Princess Leia in the forest. He helps her to the relative safety of his village,
+                            and notices her courage and compassion. Wicket has good knowledge of the terrain of Endor,
+                            leading him to be essential during the Rebellion's attack on the Imperial forces. Wicket was
+                            portrayed by actor Warwick Davis. <br><br>
+                        </p>
+                        <p class="text-info">
+                            Teebo is described by the Star Wars: The Complete Visual Dictionary as being 'A watcher of
+                            the stars and a poet at heart.' His ability to make a sound practical judgement has caused
+                            him to have a position as a leader within the tribe. He wears a Gurreck skull headdress.
+                            Teebo was portrayed by Jack Purvis. <br><br>
+                        </p>
+                        <p class="text-light">
+                            Chief Chirpa has been the leader of the Ewok tribe for a total of 42 seasons. He has a large
+                            amount of wisdom and good judgement, but he has become forgetful due to his old age. He
+                            allows the Ewok tribe the authority to fight against the Empire. Chief Chirpa has a
+                            medallion signifying he is the chief of the Ewoks. Chirpa was played by Jane Busby. <br><br>
+                        </p>
+                        <p class="text-info">
+                            Logray is the Ewok tribal shaman, who relies on ancient magic in order to assist his tribe.
+                            He is suspicious of all outsiders, which is reinforced due to the arrival of Imperial
+                            troops. Logray was portrayed by Mike Edmonds who also was "tail-puppeteer" for Jabba the
+                            Hutt. <br><br>
+                        </p>
+                        <p class="text-light">
+                            Paploo is Chief Chirpa's nephew and a scout who, along with Wicket, helps lead the Rebels to
+                            the shield generator protecting the second Death Star. Although his effort to lure four
+                            Imperial scouts away from the bunker could have compromised the attack, it was relatively
+                            successful as he stole a speeder bike and forced three of the scouts to give chase, allowing
+                            the rebels to overpower the last guard and gain entrance. Paploo is seen later helping the
+                            Ewoks fight the Empire. <br><br>
+                        </p>
+                        <p class="text-info">
+                            Nippet is a baby Ewok who gets her name in the vintage era. Nippet is the daughter of Lumat.
+                            <br><br>
+
+                            Lumat is the chief woodcutter of the tribe, and is the father of Nippet. <br><br>
+                        </P>
+                        <p class="text-light"> Family: <br>
+                            Buzza (grandfather-in-law) <br>
+                            Chirpa (father-in-law) <br>
+                            Deej Warrick (father; Legends) <br>
+                            Shodu Warrick (mother; Legends) <br>
+                            Weechee Warrick (brother) <br>
+                            Widdle Warrick (brother) <br>
+                            Winda Warrick (sister; Legends) <br><br>
+                        </p>
+                        <p class="text-info"> Occupation: <br>
+                            Male Ewok scout <br>
+                            Warrior <br>
+                            Later-Chief of Bright Tree Village on the forest moon of Endor <br><br>
+                        </p>
+                        <p class="text-light"> Affiliation: <br>
+                            Bright Tree Village <br>
+                            Alliance to Restore the Republic <br><br>
+                        </p>
+                        <p class="text-info"> In-Universe Information: <br>
+                            Full Name: Wicket Wystri Warrick <br>
+                            Born: Circa 8 BBY, Endor <br>
+                            Species: Ewok <br>
+                            Gender: Male <br>
+                            Height: 0.8 meters <br>
+                            Mass: 20 kilograms <br>
+                            Hair Color: Brown <br>
+                            Eye Color: Brownish black <br><br>
+
+                            Spouse: Kneesaa <br>
+                            Children: <br>
+                            Pommet Warrick (son) <br><br>
+
+                            Homeworld: Endor <br><br>
+
+
+                        </p>
+                        <p>
+                            <a href="https://starwars.fandom.com/wiki/Wicket_Wystri_Warrick/Legends?so=search"
+                                target="_blank"><button class="btn btn-outline-primary text-light">Wicket Wystri Warrick
+                                </button></a>
+                        </p>
+                        <p>
+                            <a href="https://screenrant.com/ewok-star-wars-trivia-facts-you-didnt-know/"
+                                target="_blank"><button class="btn btn-outline-primary text-light">15 Things You Did Not
+                                    Know About EWOKs </button></a>
+                        </p>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/Ewoks_(TV_series)" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">Ewok Cartoons </button></a>
+                        </p> <a href="#Top">Back To Top</a>
+                    </div>
+                    <!-- WICKET W WARRICK (24) ewok -->
+
+                    <!-- GREEDO (25) greedo -->
+                    <h2 id="S25">
+                        <a href="#">
+                            <h1><b class="starwars text-success">Greedo
+                                </b></h1>
+                        </a>
+                    </h2>
+                    <div>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/Greedo" target="_blank"><button
+                                    class="btn btn-outline-success text-light">For
+                                    More Wikipedia Information Click Here</button></a>
+                        </p>
+                        <p class="text-success">
+                            Greedo
+                            <a href="https://youtu.be/U8YflqDGbkw" target="_blank"><img src="img3/Greedo.webp" alt=""
+                                    height="100px;" width="200px;"></a>
+                        </p>
+                        <p class="text-light">
+                            Created by George Lucas <br>
+                            First appearance <br>
+                            Literature: Star Wars: From the Adventures of Luke Skywalker (1976) <br>
+                            Film: Star Wars (1977) <br><br>
+                        </p>
+                        <P class="text-info"> Greedo: <br>
+                            Poor Greedo. No matter which way the “Han shot first” controversy plays out, the bug-eyed,
+                            green-scaled Rodian bounty hunter looks bad. <br><br>
+
+                            In the original Star Wars, when Jabba's henchman confronts Han over debts owed, he's the
+                            classic talking killer, yammering threats long enough for his adversary to quietly unholster
+                            his blaster and gun him down. <br><br>
+                        </p>
+                        <p class="text-light">
+                            Greedo is a Rodian bounty hunter working for Jabba the Hutt in Star Wars: A New Hope. Jabba
+                            hires him to capture Han Solo, who lost the Hutt's cargo during a smuggling mission while
+                            evading pursuit from an Imperial Star Destroyer. Greedo tracks his target to the Mos Eisley
+                            cantina on Tatooine, where Han kills him with a concealed blaster. <br><br>
+
+                            In the 1997 special edition, Greedo shoots first from across a small table and misses to the
+                            right by half a foot. Either way, his ineptitude at Mos Eisley helps set a heroic course for
+                            a fellow smuggler turned hero of the rebellion. But the controversy over his death has made
+                            him immortal.
+                        </P>
+                        <p class="text-info"> Occupation: <br>
+                            Bounty Hunter <br>
+                        </p>
+                        <p class="text-light"> Affiliation: <br>
+                            Jabba the Hutt <br><br>
+                        </p>
+                        <p class="text-info"> In-Universe Information: <br>
+                            Full Name: Greedo Tetsu Jr. <br>
+                            Gender: Male <br>
+                            Homeworld: Rodia <br><br>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/kuxcAOZ1WlY" target="_blank"><button
+                                    class="btn btn-outline-success text-light">Complete Life of Greedo</button></a>
+                        </p> <br>
+                        <p>
+                            <a href="https://youtu.be/vYmESMwcccM" target="_blank"><button
+                                    class="btn btn-outline-success text-light">10 Interesting Facts About
+                                    Greedo</button></a>
+                        </p> <a href="#Top">Back To Top</a>
+                    </div>
+                    <!-- GREEDO (25) greedo -->
+
+                    <!-- LANDO CALRISSIAN (26) lando -->
+                    <h2 id="S26">
+                        <a href="#">
+                            <h1><b class="starwars text-success">Lando
+                                    Calrissian <br>
+                                </b></h1>
+                        </a>
+                    </h2>
+                    <div>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/Lando_Calrissian" target="_blank"><button
+                                    class="btn btn-outline-primary text-light">For
+                                    More Wikipedia Information Click Here</button></a>
+                        </p>
+                        <p class="text-success">
+                            Lando Calrissian
+                            <a href="https://youtu.be/U2f4W8ZuYr8" target="_blank"><img src="img3/Lando Calrissian.webp"
+                                    alt="" height="100px;" width="200px;"></a>
+                        </p>
+                        <p class="text-light">
+                            Created by George Lucas <br>
+                            First appearance The Empire Strikes Back (1980) <br><br>
+                        </p>
+                        <P class="text-info"> Lando Calrissian: <br>
+                            As played by Billy Dee Williams, Lando is a suaver Han Solo. Both are rogues, gamblers and
+                            guns-for-hire who are philosophically inclined to stay out of galactic conflict unless the
+                            price is right. <br><br>
+
+                            But Han doesn't trust his old buddy, likely for the same reasons other might not trust him:
+                            He mostly acts out of self-interest, not a sense of cosmic justice.
+
+                            Sure enough, Darth Vader gets to Lando first in The Empire Strikes Back and he spends the
+                            rest of the movie — and Return of the Jedi — heroically redeeming himself.
+
+                            But the man is cool even at his most treacherous: The silk shirt, the matching cape, the
+                            easy smile. Plus Cloud City looks fly. He can't be blamed for wanting to hold onto it.
+                        </P>
+                        <p class="text-light"> Legends: <br>
+                            Alliance of Free Planets <br>
+                            New Republic <br>
+                            Special Operations <br>
+                            Galactic Alliance <br>
+                            Tendrando Arms <br><br>
+                        </p>
+                        <p class="text-info"> Occupation: <br>
+                            Captain of the Millennium Falcon <br>
+                            Professional gambler / con-artist <br>
+                            Entrepreneur / smuggler <br>
+                            Mining engineer <br>
+                            Administrator of Bespin <br>
+                            General in the Rebel Alliance <br>
+                            CEO of Tendrando Arms (in Legends) <br><br>
+                        </p>
+                        <p class="text-light"> Affiliation: <br>
+                            Calrissian Family <br>
+                            Cloud City/New Republic <br>
+                            New Republic Defense Force <br>
+                            Rebel Alliance <br>
+                            Gold Squadron <br>
+                            Uprising <br>
+                            Calrissian Enterprises <br>
+                            Resistance <br>
+                            Citizen's Fleet <br>
+                            L3-37 (Solo: A Star Wars Story) <br><br>
+                        </p>
+                        <p class="text-info"> In-Universe Information: <br>
+                            Full Name: Landonis Balthazar Calrissian III <br>
+                            Nickname: Lando <br>
+                            Gender: Male <br>
+                            Title: <br>
+                            Baron Administrator <br>
+                            General <br>
+                            Gold Leader <br><br>
+
+                            Family: Lindo Calrissian (father, Legends) <br>
+                            Spouse: Tendra Risant (Legends) <br>
+                            Children: <br>
+                            Kadara Calrissian (daughter, canon) <br>
+                            Chance Calrissian (son, Legends) <br>
+                            Homeworld: Socorro <br><br>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/og9tIQtmxko" target="_blank"><button
+                                    class="btn btn-outline-success text-light">Complete Collection of Lando
+                                    Calrissian</button></a>
+                        </p> <br>
+                        <p>
+                            <a href="https://youtu.be/iw5NLVuh2eo" target="_blank"><button
+                                    class="btn btn-outline-success text-light">Complete Legend of Lando
+                                    Calrissian</button></a>
+                        </p> <a href="#Top">Back To Top</a>
+                    </div>
+                    <!-- LANDO CALRISSIAN (26) lando -->
+
+                    <!-- <h2 id="S27">
+                        <a href="#"> IG-88 </a>
+                    </h2>
+                    <div>
+                        C is considered as a middle-level language
+                        because it supports the feature of both
+                        low-level and high-level languages
+                    </div>
+                    <h2 id="S28">
+                        <a href="#"> Rey </a>
+                    </h2>
+                    <div>
+                        C is considered as a middle-level language
+                        because it supports the feature of both
+                        low-level and high-level languages
+                    </div>
+                    <h2 id="S29">
+                        <a href="#"> Darth Plagueis </a>
+                    </h2>
+                    <div>
+                        C is considered as a middle-level language
+                        because it supports the feature of both
+                        low-level and high-level languages
+                    </div>
+                    <h2 id="S30">
+                        <a href="#"> Poe Dameron </a>
+                    </h2>
+                    <div>
+                        C is considered as a middle-level language
+                        because it supports the feature of both
+                        low-level and high-level languages
+                    </div>
+                    <h2 id="S31">
+                        <a href="#"> BB-8 </a>
+                    </h2>
+                    <div>
+                        C is considered as a middle-level language
+                        because it supports the feature of both
+                        low-level and high-level languages
+                    </div>
+                    <h2 id="S32">
+                        <a href="#"> Finn </a>
+                    </h2>
+                    <div>
+                        C is considered as a middle-level language
+                        because it supports the feature of both
+                        low-level and high-level languages
+                    </div> -->
+                </div>
+        </div>
+
+        <footer class="bg-dark text-center">
+            <p class="text-light">&copy; 2022 | MFWCC</p>
+            <a href="https://promo.displate.com/swlp1/?gclid=Cj0KCQjwntCVBhDdARIsAMEwACnSzd93AW7IICZLnDYbpHoaMamFW5PDrHB6cHyGlyvhm7nLsaDkUNwaAsi8EALw_wcB"
+                target="_blank"><i class="fa-solid fa-book-journal-whills fa-beat fa-rotate-90"></i></a>
+            <a href="https://www.facebook.com/StarWars" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/results?search_query=official+star+wars" target="_blank"><i
+                    class="fa-brands fa-youtube"></i></a>
+            <a href="https://twitter.com/search?q=star%20wars&src=typed_query" target="_blank"><i
+                    class="fa-brands fa-twitter"></i></a>
+            <a href="https://contrast.dk/star-wars/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.starwars.com/" target="_blank"><i
+                    class="fa-solid fa-jedi fa-beat fa-rotate-90"></i></a> <br><br>
+            <a class="text-light" href="#top">Back to Top</a>
+        </footer>
+    </main>
+</body>
+
+</html>
+
+<!-- <h2>
+    <a href="#"> New Character Name </a>
+</h2>
+<div>
+    C is considered as a middle-level language
+    because it supports the feature of both
+    low-level and high-level languages
+</div> -->
