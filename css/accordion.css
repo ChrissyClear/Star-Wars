@@ -1,0 +1,291 @@
+body {
+  background-image: url(../img2/background\ stars.jpg);
+}
+
+.header {
+  color: rgb(224, 224, 0);
+  text-align: center;
+  font-size: 56px;
+}
+
+.h2-starwars {
+  font-size: 8px;
+}
+
+.logo {
+  width: 100px;
+  cursor: pointer;
+  margin: 30px 0;
+  margin-right: 10px;
+}
+
+nav {
+  background-color: rgba(231, 12, 12, 0.3); 
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  height: 100px;
+}
+
+.navbar-toggler {
+  color: rgb(12, 12, 12);
+  border: 2px solid rgb(12, 12, 12);
+}
+
+ul li {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(12, 12, 12);
+  margin: 5px;
+}
+
+ul li a {
+  color: rgb(39, 11, 39) !important;
+}
+
+ul li:hover {
+  background-color: rgb(39, 11, 39);
+}
+
+ul li a:hover {
+  text-decoration: none;
+}
+
+.nav-item:hover .nav-link {
+  color: rgb(255, 255, 255) !important;
+}
+
+
+.list {
+  text-decoration: none;
+  margin: 5px;
+  color: rgb(255, 255, 255);
+  margin-left: 34px;
+}
+
+.list:hover {
+  text-decoration: none;
+  color: rgb(224, 224, 0);
+}
+
+/* accordion */
+
+.accordion-item {
+  background-color: rgba(255, 255, 255, 0.589);
+}
+
+.starwars {
+  font-size: 20px;
+}
+
+.darthvader {
+  height: 100px;
+  background: transparent url("../img3/Darth\ Vader.jpg") no-repeat center;
+}
+
+.anakin {
+  height: 100px;
+  background: transparent url("../img3/anakin\ skywalker.jpg") no-repeat center;
+}
+
+.palpatine {
+  height: 100px;
+  background: transparent url("../img3/Palpatine\ 2.webp 2.webp") no-repeat center;
+}
+
+.qui-gon {
+  height: 100px;
+  background: transparent url("../img3/Qui-Gon\ Jinn.jpg Jinn.jpg") no-repeat center;
+}
+
+.sid {
+  height: 100px;
+  background: transparent url("../img3/Darth\ Sidious\ 2.jpg") no-repeat center;
+}
+
+.yoda {
+  height: 100px;
+  background: transparent url("../img3/Yoda.jpg") no-repeat center;
+}
+
+.dooku {
+  height: 100px;
+  background: transparent url("../img3/Count\ Dooku.webp") no-repeat center;
+}
+
+.obi-wan {
+  height: 100px;
+  background: transparent url("../img3/Obi-Wan\ Kenobi.jpg") no-repeat center;
+}
+
+.maul {
+  height: 100px;
+  background: transparent url("../img") no-repeat center;
+}
+
+.luke {
+  height: 100px;
+  background: transparent url("../img") no-repeat center;
+}
+
+.storm {
+  height: 100px;
+  background: transparent url("../img") no-repeat center;
+}
+
+.leia {
+  height: 100px;
+  background: transparent url("../img") no-repeat center;
+}
+
+.jabba {
+  height: 100px;
+  background: transparent url("../img") no-repeat center;
+}
+
+.padme {
+  height: 100px;
+  background: transparent url("../img") no-repeat center;
+}
+
+.jango {
+  height: 100px;
+  background: transparent url("../img") no-repeat center;
+}
+
+.solo {
+  height: 100px;
+  background: transparent url("../img") no-repeat center;
+}
+
+.grievous {
+  height: 100px;
+  background: transparent url("../img") no-repeat center;
+}
+
+.chewy {
+  height: 100px;
+  background: transparent url("../img") no-repeat center;
+}
+
+.bib {
+  height: 100px;
+  background: transparent url("../img") no-repeat center;
+}
+
+.c-3po {
+  height: 100px;
+  background: transparent url("../img") no-repeat center;
+}
+
+.kyloren {
+  height: 100px;
+  background: transparent url("../img") no-repeat center;
+}
+
+.r2-d2 {
+  height: 100px;
+  background: transparent url("../img") no-repeat center;
+}
+
+.bobafett {
+  height: 100px;
+  background: transparent url("../img") no-repeat center;
+}
+
+.ewok {
+  height: 100px;
+  background: transparent url("../img") no-repeat center;
+}
+
+.greedo {
+  height: 100px;
+  background: transparent url("../img") no-repeat center;
+}
+
+.lando {
+  height: 100px;
+  background: transparent url("../img") no-repeat center;
+}
+
+.ig88 {
+  height: 100px;
+  background: transparent url("../img") no-repeat center;
+}
+
+.rey {
+  height: 100px;
+  background: transparent url("../img") no-repeat center;
+}
+
+.plagues {
+  height: 100px;
+  background: transparent url("../img") no-repeat center ;
+}
+
+.poe {
+  height: 100px;
+  background: transparent url("../img") no-repeat center;
+}
+
+.bb8 {
+  height: 100px;
+  background: transparent url("../img") no-repeat center;
+}
+
+.finn {
+  height: 100px;
+  background: transparent url("../img") no-repeat center;
+}
+
+footer {
+  text-align: center;
+}
+
+i {
+  margin-left: 18px;
+}
+
+.fa-book-journal-whills {
+  color: rgb(108, 117, 125);
+}
+
+.fa-facebook-f {
+  color: rgb(108, 117, 125);
+}
+
+.fa-youtube {
+  color: rgb(108, 117, 125)
+}
+
+.fa-twitter {
+  color: rgb(108, 117, 125);
+}
+
+.fa-linkedin {
+  color: rgb(108, 117, 125);
+}
+
+.fa-jedi {
+  color: rgb(108, 117, 125);
+}
+
+/* parallax */
+.parallax {
+  /* The image used */
+  background-image: url("../img2/falcon3.jpg");
+
+  /* Set a specific height */
+  min-height: 600px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  /* justify-content: space-evenly */
+  justify-content: space-evenly;
+  /* align-items: space-evenly */
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
