@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Final MFW Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bonus.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/f9c9c624ab.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"
+        defer>
+    </script>
+</head>
+
+<body>
+
+    <a name="#top"></a>
+    <main class="container">
+
+        <!-- add navbar-expand-lg to have buttons show/take away to just leave hamburger menu -->
+        <nav class="navbar navbar-expand-lg navbar-light navbar-dark">
+            <div class="container-fluid">
+                <a href="https://www.youtube.com/watch?v=2ynk0J_n9K4" target="_blank"><img src="img4/starwars logo.jpg"
+                        class="logo"></a>
+                <a class="navbar-brand text-danger fw-bold" href="#">NAVBAR</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- me-auto = left aligned ms-auto = right aligned -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-dark" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Published Projects
+                            </a>
+                            <ul class="dropdown-menu text-success" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="https://chrissyclear.github.io/W4B-Final-Project"
+                                        id="02" target="_blank">SpongeBob</a></li>
+                                <li><a class="dropdown-item" href="https://chrissyclear.github.io/Day6/" id="03"
+                                        target="_blank">Dragons</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item" href="https://chrissyclear.github.io/event-landing-page"
+                                        id="04" target="_blank">Event Landing Page</a>
+                                </li>
+                                <li><a class="dropdown-item" href="https://chrissyclear.github.io/parallax-practice/"
+                                        target="_blank" id="05">Parallax</a></li>
+                                <li><a class="dropdown-item" href="https://chrissyclear.github.io/Carousel-Practice/"
+                                        target="_blank">Carousel</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-dark" aria-current="page" href="starwars.html">Star Wars
+                                Characters</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-dark" aria-current="page" href="bonus.html">Bonus</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-dark" aria-current="page" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-danger" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="parallax">
+            <!-- copy section for more cards -->
+            <section>
+                <div class="dropdown">
+                    <img src="img/Hardware Wars.jpg" alt="" width="100" height="150">
+                    <div class="dropdown-content">
+                        <a href="https://youtu.be/ccfbw2RJ3ow" target="_blank">
+                            <img src="img/Hardware Wars.jpg" alt="" width="200" height="200">
+                        </a>
+                        <div class="desc">Hardware Wars</div>
+                        <div>
+                            <p class="cards">1978</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <img src="img/Spaceballs.jpg" alt="" width="100" height="150">
+                    <div class="dropdown-content">
+                        <a href="https://youtu.be/Kj-vJALpJaA" target="_blank">
+                            <img src="img/Spaceballs.jpg" alt="" width="200" height="200">
+                        </a>
+                        <div class="desc"> Spaceballs</div>
+                        <div>
+                            <p class="cards">1987</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <img src="img/Thumb Wars.webp" alt="" width="100" height="150">
+                    <div class="dropdown-content">
+                        <a href="https://youtu.be/3tuef6xofUo" target="_blank">
+                            <img src="img/Thumb Wars.webp" alt="" width="200" height="200">
+                        </a>
+                        <div class="desc"> Thumb Wars</div>
+                        <div>
+                            <p class="cards">1999</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <img src="img/Robot Chicken.jpg" alt="" width="100" height="150">
+                    <div class="dropdown-content">
+                        <a href="https://youtu.be/_69wvG7Bqa8" target="_blank">
+                            <img src="img/Robot Chicken.jpg" alt="" width="200" height="200">
+                        </a>
+                        <div class="desc"> Robot Chicken:Star Wars</div>
+                        <div>
+                            <p class="cards">2007</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <img src="img/Fuzzball.jpg" alt="" width="100" height="150">
+                    <div class="dropdown-content">
+                        <a href="https://youtu.be/O8ov8k9r9EM" target="_blank">
+                            <img src="img/Fuzzball.jpg" alt="" width="200" height="200">
+                        </a>
+                        <div class="desc"> Laugh It Up, Fuzzball: The Family Guy Trilogy </div>
+                        <div>
+                            <p class="cards">1977, 1980, 1983</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <img src="img/Ice Pirates.webp" alt="" width="100" height="150">
+                    <div class="dropdown-content">
+                        <a href="https://youtu.be/6u0vqD202Tw" target="_blank">
+                            <img src="img/Ice Pirates.webp" alt="" width="200" height="200">
+                        </a>
+                        <div class="desc">Ice Pirates</div>
+                        <div>
+                            <p class="cards">1984</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <img src="img/Simpsons Star Wars 2.jpg" alt="" width="100" height="150">
+                    <div class="dropdown-content">
+                        <a href="  https://youtu.be/fZFoOpqAQto" target="_blank">
+                            <img src="img/Simpsons Star Wars.jpg" alt="" width="200" height="200">
+                        </a>
+                        <div class="desc">Lego Star Wars Episodes</div>
+                        <div>
+                            <p class="cards">2020</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <img src="img/LEGOs.jpg" alt="" width="100" height="150">
+                    <div class="dropdown-content">
+                        <a href="https://www.bing.com/videos/search?q=lego+star+wars+episodes&qpvt=lego+star+wars+episodes&FORM=VDRE"
+                            target="_blank">
+                            <img src="img/LEGOs2.jpg" alt="" width="200" height="200">
+                        </a>
+                        <div class="desc">Lego Star Wars Episodes</div>
+                        <div>
+                            <p class="cards">1970-present</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <img src="img/Tom & Jerry Star Wars.jpg" alt="" width="100" height="150">
+                    <div class="dropdown-content">
+                        <a href="https://youtu.be/MjoPjhZiLZA" target="_blank">
+                            <img src="img/Tom & Jerry Star Wars.jpg" alt="" width="200" height="200">
+                        </a>
+                        <div class="desc"> Tom & Jerry with Lightsabers compilation Episode 1</div>
+                        <div>
+                            <p class="cards">2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <img src="img/Bloopers2.jpg" alt="" width="100" height="150">
+                    <div class="dropdown-content">
+                        <a href="https://youtu.be/EkGXmLmXjZ4" target="_blank">
+                            <img src="img/Bloopers.jpg" alt="" width="200" height="200">
+                        </a>
+                        <div class="desc">Star Wars Prequels Bloopers COMPLETE COLLECTION!</div>
+                        <div>
+                            <p class="cards">Bloopers from:
+                                Episode I The Phantom Menace
+                                Episode II Attack of the Clones
+                                Episode III Revenge of the Sith
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <img src="img/Weird Al.jpg" alt="" width="100" height="150">
+                    <div class="dropdown-content">
+                        <a href="https://youtu.be/S8lNmnzs64U" target="_blank">
+                            <img src="img/Weird Al-Anakin.jpg" alt="" width="200" height="200">
+                        </a>
+                        <div class="desc">Weird Al Yankovic - The Saga Begins</div>
+                        <div>
+                            <p class="cards">1999</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <img src="img/Bad Lip Reading-Jabba.jpg " alt="" width="100" height="150">
+                    <div class="dropdown-content">
+                        <a href="https://youtu.be/_Ge4_stUpqs" target="_blank">
+                            <img src="img/Bad Lip Reading-Jabba.jpg" alt="" width="200" height="200">
+                        </a>
+                        <div class="desc">Bad Lip Reads-Jabba </div>
+                        <div>
+                            <p class="cards">2015</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <img src="img/Bad Lip Reading-Luke&Yoda.jpg" alt="" width="100" height="150">
+                    <div class="dropdown-content">
+                        <a href="https://youtu.be/B7QMKvKcUfM" target="_blank">
+                            <img src="img/Bad Lip Reading-Luke&Yoda.jpg" alt="" width="200" height="200">
+                        </a>
+                        <div class="desc">Bad Lip Reads-Luke and Yoda</div>
+                        <div>
+                            <p class="cards">2016</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <img src="img/Bad Lip Reading-Luke.jpg" alt="" width="100" height="150">
+                    <div class="dropdown-content">
+                        <a href=" https://youtu.be/VdWJPkVhWzo" target="_blank">
+                            <img src="img/Bad Lip Reading-Luke.jpg" alt="" width="200" height="200">
+                        </a>
+                        <div class="desc">Bad Lip Reads-Luke</div>
+                        <div>
+                            <p class="cards">2016</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <article>
+                <div class="dropdown2">
+                    <img src="img/Fighters.jpg" alt="" width="200" height="150">
+                    <div class="dropdown-content2">
+                        <a href="https://www.digitaltrends.com/movies/coolest-tie-fighters-star-wars-franchise-ranked/"
+                            target="_blank">
+                            <img src="img/Fighters.jpg" alt="" width="200" height="200">
+                        </a>
+                        <div class="desc2">Fighters</div>
+                        <div>
+                            <p class="cards2">
+                                TIE Fighter
+                                TIE Advanced
+                                TIE Bomber
+                                First Order Special Forces TIE Fighter
+                                The Defender
+                                TIE Striker
+                                TIE Interceptor
+                                TIE Silencer
+                                TIE/RP Reaper
+                                Vulture Droid
+                                NSSIS Class Clawcraft
+                                T-47 Airspeeder
+                                Sith Infiltrator
+                                Naboo N-1 Starfighter
+                                Naboo Royal Cruiser
+                                ETA-2 Jedi Starfighter
+                                Delta-7 Jedi Starfighter
+                                ARC-170 Starfighter
+                                Kom'rk Class Fighter
+                                A-Wing
+                                B-Wing
+                                U-Wing
+                                Y-Wing
+                                X-Wing
+                                V-Wing
+                                MG-100 StarFortress Bomber
+                                Cloud Car</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown2">
+                    <img src="img/Shuttles & Cargo Ships.webp" alt="" width="200" height="150">
+                    <div class="dropdown-content2">
+                        <a href="https://www.starwars.com/search?q=shuttles+and+cargos+ships" target="_blank">
+                            <img src="img/Shuttles & Cargo Ships.webp" alt="" width="200" height="200">
+                        </a>
+                        <div class="desc2">Shuttles & Cargo Ships</div>
+                        <div>
+                            <p class="cards2">
+                                Solar Sailer
+                                Lambda Class Imperial Shuttle
+                                Delta Class T-3C Shuttle
+                                Upsilon Class Command Shuttle
+                                Zeta Class Imperial Shuttle
+                                Republic Cruiser
+                                CR90 Corvette
+                                J-Type 327 Nubian Royal Starship
+                                J-Type Star Skiff
+                                H-Type Nubian Yacht
+                                HWK-290
+                                Resistance Transport
+                                AA-9 Coruscant Freighter
+                                VCX-100 Light Freighter
+                                YT-2400 Light Freighter
+                                YT-1300 Light Freighter “Millennium Falcon”
+                                Dynamic Class Freighter
+                                Baleen Class Heavy Freighter
+                                Rogue Shadow
+                                Outbound Flight
+                                Firespray-31 Class Patrol and Attack Craft “Slave 1”
+                                The Razor Crest
+                                Coronet
+                                Quadjumper
+                                Corona Class Armed Frigate
+                                Low Altitude Assault Transport / Republic Attack Gunships
+                                Atmospheric Assault Lander
+                                The Ghost</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown2">
+                    <img src="img/Cruisers & Battleships.jpg" alt="" width="200" height="150">
+                    <div class="dropdown-content2">
+                        <a href="https://www.bing.com/images/search?q=cruisers+and+battleships+official+star+wars&qpvt=cruisers+and+batteships+official+star+wars&tsc=ImageHoverTitle&form=IGRE&first=1"
+                            target="_blank">
+                            <img src="img/Cruisers & Battleships.jpg" alt="" width="200" height="200">
+                        </a>
+                        <div class="desc2">Cruisers & Battleships</div>
+                        <div>
+                            <p class="cards2">
+                                Imperial Star Destroyer
+                                Super Star Destroyer
+                                Venator Class Star Destroyer
+                                Interdictor Class Star Destroyer
+                                Separatist Dreadnought
+                                Republic Attack Cruiser
+                                Fulminatrix
+                                The Finalizer
+                                Providence Class Star Destroyer “Invisible Hand”
+                                Trade Federation Battleship
+                                Nebulon B Frigate
+                                Home One
+                                Trade Federation Landing Ship
+                                Subjugator Class Heavy Cruiser
+                                MC75 Star Cruiser
+                                C-ROC Gozanti Class Cruiser
+                                GR-75 Medium Transport
+                                Hammerhead Corvette
+                                Radiant VII
+                                Luxury 3000
+                                Tantive IV
+                                MC85 Star Cruiser</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown2">
+                    <img src="img/Super Weapons & Large Stations.webp" alt="" width="200" height="150">
+                    <div class="dropdown-content2">
+                        <a href="https://www.starwars.com/search?q=Super+Weapons+and+Large+Stations&o=https%3A%2F%2Fwww.starwars.com%2Fsearch"
+                            target="_blank">
+                            <img src="img/Super Weapons & Large Stations.webp" alt="" width="200" height="200">
+                        </a>
+                        <div class="desc2">Super Weapons & Large Stations</div>
+                        <div>
+                            <p class="cards2">
+                                Death Star
+                                Death Star II
+                                Starkiller Base
+                                World Devastator
+                                Sun Crusher
+                                Centerpoint Station
+                                The Wheel
+                                Star Forge</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown2">
+                    <img src="img/Speeders.jpg" alt="" width="200" height="150">
+                    <div class="dropdown-content2">
+                        <a href="https://www.starwars.com/search?q=speeders" target="_blank">
+                            <img src="img/Speeders.jpg" alt="" width="200" height="200">
+                        </a>
+                        <div class="desc2">Speeders</div>
+                        <div>
+                            <p class="cards2">
+                                V-4X-D Ski Speeder
+                                X-34 Landspeeder
+                                XJ-6 Airspeeder
+                                T-16 Skyhopper
+                                T-47 Airspeeder
+                                Rey's Speeder
+                                Speeder Bike
+                                Razalon FC-20 Speeder Bike
+                                Barc Speeder
+                                Swoop Bike</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown2">
+                    <img src="img/Walkers & Tanks.jpeg" alt="" width="200" height="150">
+                    <div class="dropdown-content2">
+                        <a href="https://www.starwars.com/search?q=walkers+and+tanks" target="_blank">
+                            <img src="img/Walkers & Tanks.jpeg" alt="" width="200" height="200">
+                        </a>
+                        <div class="desc2">Walkers & Tanks</div>
+                        <div>
+                            <p class="cards2">
+                                AT-AT Walker
+                                AT-ACT Walker
+                                AT-ST Walker
+                                AT-TE Walker
+                                AAT Battle Tank
+                                HAVW A6 Juggernaut
+                                TX-224 GAVW Occupier
+                                Multi-Troop Transport</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown2">
+                    <img src="img/Land Vehicles.jpeg" alt="" width="200" height="150">
+                    <div class="dropdown-content2">
+                        <a href="https://starwars.fandom.com/wiki/Category:Ground_vehicles" target="_blank">
+                            <img src="img/Land Vehicles.jpeg" alt="" width="200" height="200">
+                        </a>
+                        <div class="desc2">Land Vehicles</div>
+                        <div>
+                            <p class="cards2">
+                                General Grievous's
+                                Tsmeu-6 Wheel bike
+                                Jabba The Hutt's Barge
+                                Desert Skiff
+                                First Order Snowspeeder
+                                Single Trooper Aerial Platform
+                                EasyRide Coruscant Air Taxi
+                                Sebulba's Podracer
+                                Anakin's Podracer
+                                74-Z Speeder Bike
+                                Sandcrawler</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown2">
+                    <img src="img/Water Vehicles.webp" alt="" width="200" height="150">
+                    <div class="dropdown-content2">
+                        <a href="https://starwars.fandom.com/wiki/Category:Aquatic_vehicles" target="_blank">
+                            <img src="img/Water Vehicles.webp" alt="" width="200" height="200">
+                        </a>
+                        <div class="desc2">Water Vehicles</div>
+                        <div>
+                            <p class="cards2">
+                                Bongo Submarine
+                                AT-AT Swimmer
+                                Gondola Speeder
+                                Wookie Flying Catamaran</p>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+        </div>
+        <footer class="bg-dark text-center">
+            <p class="text-light text-center">&copy; 2022 | MFWCC</p>
+            <a href="https://www.starwars.com/ships%20and%20vehicles" target="_blank"><button type="button"
+                    class="blue btn btn-primary">JEDI</button></a>
+                    <a href="https://promo.displate.com/swlp1/?gclid=Cj0KCQjwntCVBhDdARIsAMEwACnSzd93AW7IICZLnDYbpHoaMamFW5PDrHB6cHyGlyvhm7nLsaDkUNwaAsi8EALw_wcB" target="_blank"><i class="fa-solid fa-book-journal-whills fa-beat fa-rotate-90"></i></a>
+            <a href="https://www.facebook.com/StarWars" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/results?search_query=official+star+wars" target="_blank"><i
+                    class="fa-brands fa-youtube"></i></a>
+            <a href="https://twitter.com/search?q=star%20wars&src=typed_query" target="_blank"><i
+                    class="fa-brands fa-twitter"></i></a>
+            <a href="https://contrast.dk/star-wars/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.starwars.com/" target="_blank"><i
+                    class="fa-solid fa-jedi fa-beat fa-rotate-90"></i></a>
+            <a href="https://www.starwarskids.com/" target="_blank"><button type="button"
+                    class="red btn btn-danger">SITH</button></a> <br><br>
+            <a class="text-light" href="#top">Back to Top</a>
+        </footer>
+    </main>
+</body>
+
+</html>
+
+
+<!-- <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select> -->
