@@ -17,6 +17,7 @@ nav {
     margin-bottom: 10px;
     font-family: 'Times New Roman', Times, serif;
     height: 100px;
+    z-index: 10000;
 }
 
 .navbar-toggler {
